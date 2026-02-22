@@ -9,14 +9,14 @@ const DynamicMap = dynamic(() => import('./Map'), {
     ssr: false,
     loading: () => (
         <div className="w-full h-full bg-[#0a0a0a] flex items-center justify-center border-l border-white/10">
-            <div className="w-8 h-8 rounded-full border-t-2 border-[var(--color-accent)] animate-spin" />
+            <div className="w-8 h-8 rounded-full border-t-2 border-[#C5A880] animate-spin" />
         </div>
     )
 });
 
 interface MapWrapperProps {
     properties: Property[];
-    hoveredPropertyId: string | null;
+    activePropertyId: string | null;
 }
 
 export default function MapWrapper(props: MapWrapperProps) {

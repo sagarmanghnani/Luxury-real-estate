@@ -8,7 +8,7 @@ import { Property } from '@/types/property';
 import propertiesData from '@/data/properties.json';
 
 export default function SearchLayout() {
-    const [hoveredPropertyId, setHoveredPropertyId] = useState<string | null>(null);
+    const [activePropertyId, setActivePropertyId] = useState<string | null>(null);
     const properties: Property[] = propertiesData as Property[];
 
     return (
@@ -25,7 +25,8 @@ export default function SearchLayout() {
                             <PropertyCard
                                 key={property.id}
                                 property={property}
-                                onHoverAction={setHoveredPropertyId}
+                                onMouseEnter={setActivePropertyId}
+                                onMouseLeave={() => setActivePropertyId(null)}
                             />
                         ))}
                     </div>
@@ -35,7 +36,7 @@ export default function SearchLayout() {
                 <div className="hidden lg:block lg:w-1/2 h-full sticky top-0 border-l border-white/5 relative z-0">
                     <MapWrapper
                         properties={properties}
-                        hoveredPropertyId={hoveredPropertyId}
+                        activePropertyId={activePropertyId}
                     />
                 </div>
 

@@ -14,71 +14,54 @@ L.Icon.Default.mergeOptions({
     shadowUrl: require('leaflet/dist/images/marker-shadow.png').default?.src || require('leaflet/dist/images/marker-shadow.png'),
 });
 
-// Create a custom luxury gold icon
-const goldIcon = new L.Icon({
-    ...L.Icon.Default.prototype.options,
-    iconUrl: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#C5A880" width="32" height="32">
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-    </svg>
-  `),
-    iconRetinaUrl: undefined,
-    shadowUrl: undefined,
-    iconSize: [32, 32],
-    iconAnchor: [16, 32],
-    popupAnchor: [0, -32],
-});
-
-// Create an active (hovered) icon state with a more dramatic pulse
-const activeGoldIcon = new L.Icon({
-    ...goldIcon.options,
-    iconUrl: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="56" height="56">
-      <defs>
-        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="2" result="blur" />
-            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-        </filter>
-      </defs>
-      <path filter="url(#glow)" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-      <circle cx="12" cy="9" r="8" fill="none" stroke="#C5A880" stroke-width="2" opacity="0.8"/>
-      <circle cx="12" cy="9" r="12" fill="none" stroke="#C5A880" stroke-width="0.5" opacity="0.4"/>
-    </svg>
-  `),
-    iconSize: [56, 56],
-    iconAnchor: [28, 56],
-    popupAnchor: [0, -56],
-});
+// Create dynamic divIcon based on active state using Tailwind classes for CSS animations
+const createCustomIcon = (isActive: boolean) => {
+    return new L.DivIcon({
+        className: 'bg-transparent border-0',
+        html: `<div class="relative flex items-center justify-center transition-all duration-300 ease-out flex-col ${isActive
+                ? 'scale-150 z-50 drop-shadow-[0_0_15px_rgba(197,168,128,0.5)]'
+                : 'hover:scale-110 z-0 drop-shadow-md'
+            }">
+            <svg viewBox="0 0 24 24" fill="${isActive ? '#C5A880' : 'rgba(10,10,10,0.95)'}" stroke="${isActive ? '#ffffff' : '#C5A880'}" stroke-width="${isActive ? '1' : '1.5'}" class="w-10 h-10 transition-all duration-300">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="3.5" fill="${isActive ? '#ffffff' : '#C5A880'}" stroke="none" />
+            </svg>
+        </div>`,
+        iconSize: [40, 40],
+        iconAnchor: [20, 40],
+        popupAnchor: [0, -40],
+    });
+};
 
 // Component to handle map view updates based on hover state
-function MapController({ hoveredProperty, properties }: { hoveredProperty?: Property, properties: Property[] }) {
+function MapController({ activeProperty, properties }: { activeProperty?: Property, properties: Property[] }) {
     const map = useMap();
 
     useEffect(() => {
-        if (hoveredProperty) {
+        if (activeProperty) {
             // Using panTo instead of flyTo for a snappier, more robust "app-like" feel
             // flyTo can feel sluggish if the user hovers rapidly between cards
-            map.panTo([hoveredProperty.coordinates.lat, hoveredProperty.coordinates.lng], {
+            map.panTo([activeProperty.coordinates.lat, activeProperty.coordinates.lng], {
                 animate: true,
                 duration: 0.8,
                 easeLinearity: 0.1
             });
         }
-    }, [hoveredProperty, map]);
+    }, [activeProperty, map]);
 
     return null;
 }
 
 interface MapProps {
     properties: Property[];
-    hoveredPropertyId: string | null;
+    activePropertyId: string | null;
 }
 
-export default function Map({ properties, hoveredPropertyId }: MapProps) {
+export default function Map({ properties, activePropertyId }: MapProps) {
     const mapRef = useRef<L.Map>(null);
 
-    // Find hovered property for controller
-    const hoveredProperty = properties.find(p => p.id === hoveredPropertyId);
+    // Find active property for controller
+    const activeProperty = properties.find(p => p.id === activePropertyId);
 
     return (
         <div className="w-full h-full relative border-l border-white/10 z-0">
@@ -96,12 +79,12 @@ export default function Map({ properties, hoveredPropertyId }: MapProps) {
                 />
 
                 {properties.map((property) => {
-                    const isActive = hoveredPropertyId === property.id;
+                    const isActive = activePropertyId === property.id;
                     return (
                         <Marker
                             key={property.id}
                             position={[property.coordinates.lat, property.coordinates.lng]}
-                            icon={isActive ? activeGoldIcon : goldIcon}
+                            icon={createCustomIcon(isActive)}
                             zIndexOffset={isActive ? 1000 : 0}
                         >
                             <Popup className="luxury-popup">
@@ -115,7 +98,7 @@ export default function Map({ properties, hoveredPropertyId }: MapProps) {
                     );
                 })}
 
-                <MapController hoveredProperty={hoveredProperty} properties={properties} />
+                <MapController activeProperty={activeProperty} properties={properties} />
             </MapContainer>
 
             {/* Overlays to preserve contrast on edges */}
@@ -130,7 +113,7 @@ export default function Map({ properties, hoveredPropertyId }: MapProps) {
         }
         /* Smooth marker transitions */
         .leaflet-marker-icon {
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
         }
         .luxury-popup .leaflet-popup-content-wrapper {
           border-radius: 4px;
