@@ -29,18 +29,25 @@ const goldIcon = new L.Icon({
     popupAnchor: [0, -32],
 });
 
-// Create an active (hovered) icon state
+// Create an active (hovered) icon state with a more dramatic pulse
 const activeGoldIcon = new L.Icon({
     ...goldIcon.options,
     iconUrl: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d4b78f" width="48" height="48">
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-      <circle cx="12" cy="9" r="8" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.5"/>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="56" height="56">
+      <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+      <path filter="url(#glow)" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      <circle cx="12" cy="9" r="8" fill="none" stroke="#C5A880" stroke-width="2" opacity="0.8"/>
+      <circle cx="12" cy="9" r="12" fill="none" stroke="#C5A880" stroke-width="0.5" opacity="0.4"/>
     </svg>
   `),
-    iconSize: [48, 48],
-    iconAnchor: [24, 48],
-    popupAnchor: [0, -48],
+    iconSize: [56, 56],
+    iconAnchor: [28, 56],
+    popupAnchor: [0, -56],
 });
 
 // Component to handle map view updates based on hover state
@@ -49,9 +56,12 @@ function MapController({ hoveredProperty, properties }: { hoveredProperty?: Prop
 
     useEffect(() => {
         if (hoveredProperty) {
-            map.flyTo([hoveredProperty.coordinates.lat, hoveredProperty.coordinates.lng], 12, {
-                duration: 1.5,
-                easeLinearity: 0.25
+            // Using panTo instead of flyTo for a snappier, more robust "app-like" feel
+            // flyTo can feel sluggish if the user hovers rapidly between cards
+            map.panTo([hoveredProperty.coordinates.lat, hoveredProperty.coordinates.lng], {
+                animate: true,
+                duration: 0.8,
+                easeLinearity: 0.1
             });
         }
     }, [hoveredProperty, map]);
@@ -117,6 +127,10 @@ export default function Map({ properties, hoveredPropertyId }: MapProps) {
                 __html: `
         .leaflet-container {
           background-color: #0a0a0a !important;
+        }
+        /* Smooth marker transitions */
+        .leaflet-marker-icon {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
         }
         .luxury-popup .leaflet-popup-content-wrapper {
           border-radius: 4px;
