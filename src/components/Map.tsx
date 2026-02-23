@@ -19,8 +19,8 @@ const createCustomIcon = (isActive: boolean) => {
     return new L.DivIcon({
         className: 'bg-transparent border-0',
         html: `<div class="relative flex items-center justify-center transition-all duration-300 ease-out flex-col ${isActive
-                ? 'scale-150 z-50 drop-shadow-[0_0_15px_rgba(197,168,128,0.5)]'
-                : 'hover:scale-110 z-0 drop-shadow-md'
+            ? 'scale-150 z-50 drop-shadow-[0_0_15px_rgba(197,168,128,0.5)]'
+            : 'hover:scale-110 z-0 drop-shadow-md'
             }">
             <svg viewBox="0 0 24 24" fill="${isActive ? '#C5A880' : 'rgba(10,10,10,0.95)'}" stroke="${isActive ? '#ffffff' : '#C5A880'}" stroke-width="${isActive ? '1' : '1.5'}" class="w-10 h-10 transition-all duration-300">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
@@ -88,11 +88,14 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                             zIndexOffset={isActive ? 1000 : 0}
                         >
                             <Popup className="luxury-popup">
-                                <div style={{ padding: '4px', fontFamily: 'ui-sans-serif, system-ui, sans-serif' }}>
-                                    <strong style={{ display: 'block', fontSize: '14px', marginBottom: '2px', color: '#000' }}>
-                                        ${(property.price / 1000000).toFixed(1)}M
-                                    </strong>
-                                </div>
+                                <a href={`/properties/${property.slug}`} style={{ textDecoration: 'none' }}>
+                                    <div style={{ padding: '4px', fontFamily: 'ui-sans-serif, system-ui, sans-serif' }}>
+                                        <strong style={{ display: 'block', fontSize: '14px', marginBottom: '4px', color: '#000' }}>
+                                            ${(property.price / 1000000).toFixed(1)}M
+                                        </strong>
+                                        <span style={{ color: '#C5A880', fontSize: '12px', fontWeight: 'bold' }}>View Details &rarr;</span>
+                                    </div>
+                                </a>
                             </Popup>
                         </Marker>
                     );

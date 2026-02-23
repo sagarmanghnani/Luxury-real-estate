@@ -9,6 +9,13 @@ export interface PropertyFeatures {
     sqft: number;
 }
 
+export interface NeighborhoodData {
+    commuteToTechHub: string;
+    schoolDistrictRating: string;
+    nearestMetro: string;
+    walkabilityScore: number;
+}
+
 export interface Property {
     id: string;
     title: string;
@@ -19,4 +26,6 @@ export interface Property {
     features: PropertyFeatures;
     images: string[];
     status: 'Active' | 'Pending' | 'Sold';
+    virtualTourUrl?: string;
+    neighborhood?: NeighborhoodData;
 }

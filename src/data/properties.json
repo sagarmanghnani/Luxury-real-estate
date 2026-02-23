@@ -5,10 +5,26 @@
     "slug": "modern-glass-estate-beverly-hills",
     "price": 8500000,
     "address": "1045 Summit Drive, Beverly Hills, CA 90210",
-    "coordinates": { "lng": -118.4136, "lat": 34.0885 },
-    "features": { "beds": 6, "baths": 8, "sqft": 10500 },
-    "images": ["https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"],
-    "status": "Active"
+    "coordinates": {
+      "lng": -118.4136,
+      "lat": 34.0885
+    },
+    "features": {
+      "beds": 6,
+      "baths": 8,
+      "sqft": 10500
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=JWMhiGxKqS2",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "1.2 miles",
+      "walkabilityScore": 82
+    }
   },
   {
     "id": "prop-002",
@@ -16,9 +32,25 @@
     "slug": "oceanfront-minimalist-villa-malibu",
     "price": 12400000,
     "address": "22102 Pacific Coast Hwy, Malibu, CA 90265",
-    "coordinates": { "lng": -118.6508, "lat": 34.0390 },
-    "features": { "beds": 5, "baths": 6, "sqft": 8200 },
-    "images": ["https://images.unsplash.com/photo-1600607687931-ceeb66d11362?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"],
-    "status": "Active"
+    "coordinates": {
+      "lng": -118.6508,
+      "lat": 34.0390
+    },
+    "features": {
+      "beds": 5,
+      "baths": 6,
+      "sqft": 8200
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687931-ceeb66d11362?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=JWMhiGxKqS2",
+    "neighborhood": {
+      "commuteToTechHub": "45 min",
+      "schoolDistrictRating": "10/10",
+      "nearestMetro": "5.0 miles",
+      "walkabilityScore": 65
+    }
   }
 ]
