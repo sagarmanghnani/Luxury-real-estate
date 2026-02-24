@@ -4,6 +4,8 @@ import { Property } from '@/types/property';
 import propertiesData from '@/data/properties.json';
 import { VirtualTour } from '@/components/property/VirtualTour';
 import { NeighborhoodDataPanel } from '@/components/property/NeighborhoodDataPanel';
+import { RentalYieldCalculator } from '@/components/property/RentalYieldCalculator';
+import { LeadCaptureSidebar } from '@/components/property/LeadCaptureSidebar';
 import { BedDouble, Bath, SquareSigma, MapPin } from 'lucide-react';
 
 // Next.js feature for Static Site Generation
@@ -110,6 +112,11 @@ export default async function PropertyPage({
                         </section>
                     )}
 
+                    {/* ROI & Rental Yield Calculator */}
+                    <section className="space-y-6 pt-6 border-t border-neutral-800">
+                        <RentalYieldCalculator propertyPrice={property.price} />
+                    </section>
+
                     {/* Description (Placeholder for now) */}
                     <section className="space-y-6 text-neutral-300 leading-relaxed font-light text-lg">
                         <h2 className="text-2xl font-semibold tracking-wide uppercase text-white">About The Property</h2>
@@ -129,21 +136,10 @@ export default async function PropertyPage({
 
                 {/* Sidebar Column (Lead Gen / Agent Info) */}
                 <div className="lg:col-span-1">
-                    <div className="sticky top-12 bg-neutral-900 border border-neutral-800 rounded-2xl p-8 shadow-2xl">
-                        <h3 className="text-xl font-semibold mb-6 uppercase tracking-wider text-white">Interested in this property?</h3>
-                        <p className="text-neutral-400 mb-8 font-light">Contact our premier agents to schedule a private viewing or to request more information.</p>
-
-                        <form className="space-y-4">
-                            <input type="text" placeholder="Full Name" className="w-full bg-neutral-950 border border-neutral-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors" />
-                            <input type="email" placeholder="Email Address" className="w-full bg-neutral-950 border border-neutral-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors" />
-                            <input type="tel" placeholder="Phone Number" className="w-full bg-neutral-950 border border-neutral-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors" />
-                            <textarea placeholder="Message" rows={4} className="w-full bg-neutral-950 border border-neutral-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors resize-none"></textarea>
-
-                            <button type="button" className="w-full bg-white text-black font-semibold py-4 rounded-lg hover:bg-neutral-200 transition-colors uppercase tracking-widest text-sm mt-4">
-                                Request Details
-                            </button>
-                        </form>
-                    </div>
+                    <LeadCaptureSidebar
+                        propertySlug={property.slug}
+                        propertyTitle={property.title}
+                    />
                 </div>
 
             </div>
