@@ -48,7 +48,7 @@ export default function SearchLayout() {
     const [sortOrder, setSortOrder] = useState<'desc' | 'asc'>('desc');
 
     const filteredProperties = useMemo(() => {
-        let result = properties.filter((p) => {
+        const result = properties.filter((p) => {
             if (filters.propertyType !== 'All' && p.propertyType !== filters.propertyType) return false;
             if (p.price < filters.minPrice || p.price > filters.maxPrice) return false;
             if (filters.minBeds > 0 && p.features.beds < filters.minBeds) return false;

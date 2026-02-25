@@ -8,12 +8,16 @@ import { Property } from '@/types/property';
 import { Coffee, GraduationCap, Activity } from 'lucide-react';
 
 // Fix for default Leaflet icons in Next.js
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-require-imports */
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png').default?.src || require('leaflet/dist/images/marker-icon-2x.png'),
     iconUrl: require('leaflet/dist/images/marker-icon.png').default?.src || require('leaflet/dist/images/marker-icon.png'),
     shadowUrl: require('leaflet/dist/images/marker-shadow.png').default?.src || require('leaflet/dist/images/marker-shadow.png'),
 });
+/* eslint-enable @typescript-eslint/no-explicit-any */
+/* eslint-enable @typescript-eslint/no-require-imports */
 
 const AMENITY_OFFSETS = {
     cafes: [
@@ -76,7 +80,7 @@ const createPoiIcon = (type: 'cafes' | 'schools' | 'medical') => {
 };
 
 // Component to handle map view updates based on hover state
-function MapController({ activeProperty, properties }: { activeProperty?: Property, properties: Property[] }) {
+function MapController({ activeProperty }: { activeProperty?: Property }) {
     const map = useMap();
 
     useEffect(() => {
@@ -224,7 +228,7 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                     });
                 })}
 
-                <MapController activeProperty={activeProperty} properties={properties} />
+                <MapController activeProperty={activeProperty} />
             </MapContainer>
 
             {/* Overlays to preserve contrast on edges */}

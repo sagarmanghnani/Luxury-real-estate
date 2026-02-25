@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Property } from '@/types/property';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -19,11 +19,7 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: P
 
     const [imageError, setImageError] = useState(false);
 
-    // Reset image index when navigating to a new property or if property data changes
-    useEffect(() => {
-        setImageIndex(0);
-        setImageError(false);
-    }, [property.id]);
+    // State resets are handled by component remounts via key={property.id}
 
     const imgSrc = imageError ? fallbackImage : (property.images[imageIndex] || fallbackImage);
 

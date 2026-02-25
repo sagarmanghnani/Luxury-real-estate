@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Calculator, DollarSign, Percent } from 'lucide-react';
 
 interface RentalYieldCalculatorProps {
@@ -16,21 +16,8 @@ export function RentalYieldCalculator({ propertyPrice }: RentalYieldCalculatorPr
     const [monthlyRent, setMonthlyRent] = useState(defaultRent);
     const [annualExpenses, setAnnualExpenses] = useState(defaultExpenses);
 
-    const [grossYield, setGrossYield] = useState(0);
-    const [netYield, setNetYield] = useState(0);
-
-    useEffect(() => {
-        if (purchasePrice > 0) {
-            const calculatedGross = ((monthlyRent * 12) / purchasePrice) * 100;
-            const calculatedNet = (((monthlyRent * 12) - annualExpenses) / purchasePrice) * 100;
-
-            setGrossYield(calculatedGross);
-            setNetYield(calculatedNet);
-        } else {
-            setGrossYield(0);
-            setNetYield(0);
-        }
-    }, [purchasePrice, monthlyRent, annualExpenses]);
+    const grossYield = purchasePrice > 0 ? ((monthlyRent * 12) / purchasePrice) * 100 : 0;
+    const netYield = purchasePrice > 0 ? (((monthlyRent * 12) - annualExpenses) / purchasePrice) * 100 : 0;
 
     const formatCurrency = (value: number) => {
         return new Intl.NumberFormat('en-US', {

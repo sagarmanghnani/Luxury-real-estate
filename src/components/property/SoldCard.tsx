@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Property } from '@/types/property';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -16,10 +16,7 @@ export default function SoldCard({ property }: SoldCardProps) {
     const [imageIndex, setImageIndex] = useState(0);
     const [imageError, setImageError] = useState(false);
 
-    useEffect(() => {
-        setImageIndex(0);
-        setImageError(false);
-    }, [property.id]);
+    // State resets are handled by component remounts via key={property.id}
 
     const imgSrc = imageError ? fallbackImage : (property.images[imageIndex] || fallbackImage);
 

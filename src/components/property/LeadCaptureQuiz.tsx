@@ -21,7 +21,6 @@ export function LeadCaptureQuiz({ isOpen, onClose, propertySlug, propertyTitle }
     const [name, setName] = useState('');
     const [whatsapp, setWhatsapp] = useState('');
     const [intent, setIntent] = useState('');
-    const [timeline, setTimeline] = useState('');
 
     const submitToMake = async (leadType: 'partial' | 'premium', currentIntent: string = '', currentTimeline: string = '') => {
         try {
@@ -68,7 +67,6 @@ export function LeadCaptureQuiz({ isOpen, onClose, propertySlug, propertyTitle }
     };
 
     const handleTimelineSelect = async (option: string) => {
-        setTimeline(option);
         setIsSubmitting(true);
         // Fire premium lead - they completed the entire funnel
         await submitToMake('premium', intent, option);
@@ -82,7 +80,6 @@ export function LeadCaptureQuiz({ isOpen, onClose, propertySlug, propertyTitle }
         setTimeout(() => {
             setCurrentSlide('capture');
             setIntent('');
-            setTimeline('');
             setName('');
             setWhatsapp('');
         }, 500);

@@ -61,7 +61,7 @@ export default function TestimonialSlider() {
                         className="absolute w-full text-center"
                     >
                         <p className="font-serif text-2xl md:text-4xl font-light leading-snug md:leading-relaxed text-white/90 mb-10 max-w-4xl mx-auto">
-                            "{testimonials[currentIndex].quote}"
+                            &quot;{testimonials[currentIndex].quote}&quot;
                         </p>
                         <div className="flex flex-col items-center">
                             <span className="font-sans text-[11px] md:text-xs uppercase tracking-[0.25em] text-[#C5A880] mb-2 font-medium">

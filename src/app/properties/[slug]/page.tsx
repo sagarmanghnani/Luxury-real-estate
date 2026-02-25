@@ -126,7 +126,7 @@ export default async function PropertyPage({
                             Floor-to-ceiling glass walls seamlessly blend the indoor and outdoor spaces, offering sweeping, majestic views of the surrounding landscape.
                         </p>
                         <p>
-                            The state-of-the-art chef's kitchen features imported Italian marble countertops, custom cabinetry, and top-of-the-line appliances.
+                            The state-of-the-art chef&apos;s kitchen features imported Italian marble countertops, custom cabinetry, and top-of-the-line appliances.
                             Retreat to the opulent primary suite, complete with a spa-like bathroom, dual vanity sinks, and an expansive walk-in closet.
                             Step outside to your private oasis, highlighted by a zero-edge infinity pool and meticulously landscaped grounds, perfect for extravagant entertaining or quiet reflection.
                         </p>

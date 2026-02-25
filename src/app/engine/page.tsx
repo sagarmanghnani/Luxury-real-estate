@@ -29,7 +29,7 @@ export default function EnginePitchPage() {
                 </h1>
 
                 <p className="text-white/60 font-sans tracking-wide max-w-3xl mx-auto font-light leading-relaxed text-lg lg:text-xl mb-16">
-                    We don't just list properties; we engineer market dominance. Our proprietary platform and elite network ensure your legacy asset reaches the world's most capable buyers with absolute precision and discretion.
+                    We don&apos;t just list properties; we engineer market dominance. Our proprietary platform and elite network ensure your legacy asset reaches the world&apos;s most capable buyers with absolute precision and discretion.
                 </p>
 
                 {/* Core Values Grid */}
