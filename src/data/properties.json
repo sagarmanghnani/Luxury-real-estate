@@ -102,7 +102,7 @@
     "images": [
       "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
     ],
-    "status": "Active",
+    "status": "Sold",
     "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
     "neighborhood": {
       "commuteToTechHub": "15 min",
@@ -295,7 +295,7 @@
     "images": [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
     ],
-    "status": "Active",
+    "status": "Sold",
     "neighborhood": {
       "commuteToTechHub": "10 min",
       "schoolDistrictRating": "8/10",
@@ -404,7 +404,7 @@
     "images": [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
     ],
-    "status": "Active",
+    "status": "Sold",
     "neighborhood": {
       "commuteToTechHub": "25 min",
       "schoolDistrictRating": "8/10",

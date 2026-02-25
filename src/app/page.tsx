@@ -1,6 +1,8 @@
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/hero/Hero';
 import SearchLayout from '@/components/search/SearchLayout';
+import SignificantSalesTeaser from '@/components/home/SignificantSalesTeaser';
+import ClientSuccessStories from '@/components/testimonials/ClientSuccessStories';
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SearchLayout />
+      <SignificantSalesTeaser />
+      <ClientSuccessStories />
     </main>
   );
 }

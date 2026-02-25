@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import FilterBar from './FilterBar';
 import PropertyCard from './PropertyCard';
 import MapWrapper from '../MapWrapper';
@@ -12,6 +12,7 @@ export type Filters = {
     minPrice: number;
     maxPrice: number;
     minBeds: number;
+    location?: string;
 };
 
 export default function SearchLayout() {
@@ -23,7 +24,26 @@ export default function SearchLayout() {
         minPrice: 0,
         maxPrice: 100000000,
         minBeds: 0,
+        location: 'All',
     });
+
+    useEffect(() => {
+        const handleUpdateFilters = (event: Event) => {
+            const customEvent = event as CustomEvent;
+            if (customEvent.detail) {
+                setFilters((prev) => ({
+                    ...prev,
+                    propertyType: customEvent.detail.propertyType ?? prev.propertyType,
+                    minPrice: customEvent.detail.minPrice ?? prev.minPrice,
+                    maxPrice: customEvent.detail.maxPrice ?? prev.maxPrice,
+                    location: customEvent.detail.location ?? prev.location,
+                }));
+            }
+        };
+
+        window.addEventListener('update-filters', handleUpdateFilters);
+        return () => window.removeEventListener('update-filters', handleUpdateFilters);
+    }, []);
 
     const [sortOrder, setSortOrder] = useState<'desc' | 'asc'>('desc');
 
@@ -31,7 +51,12 @@ export default function SearchLayout() {
         let result = properties.filter((p) => {
             if (filters.propertyType !== 'All' && p.propertyType !== filters.propertyType) return false;
             if (p.price < filters.minPrice || p.price > filters.maxPrice) return false;
-            if (p.features.beds < filters.minBeds) return false;
+            if (filters.minBeds > 0 && p.features.beds < filters.minBeds) return false;
+            if (filters.location && filters.location !== 'All') {
+                // simple location match: check if location string is in address
+                const locationQuery = filters.location.split(',')[0].trim();
+                if (!p.address.includes(locationQuery)) return false;
+            }
             return true;
         });
 
@@ -63,7 +88,7 @@ export default function SearchLayout() {
                             <div className="col-span-full py-20 text-center text-neutral-500 font-light">
                                 <p className="text-xl">No properties match your exact criteria.</p>
                                 <button
-                                    onClick={() => setFilters({ propertyType: 'All', minPrice: 0, maxPrice: 100000000, minBeds: 0 })}
+                                    onClick={() => setFilters({ propertyType: 'All', minPrice: 0, maxPrice: 100000000, minBeds: 0, location: 'All' })}
                                     className="mt-4 text-white underline hover:text-neutral-300 transition-colors"
                                 >
                                     Clear all filters

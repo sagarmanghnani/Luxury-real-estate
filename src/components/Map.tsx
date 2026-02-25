@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Property } from '@/types/property';
+import { Coffee, GraduationCap, Activity } from 'lucide-react';
 
 // Fix for default Leaflet icons in Next.js
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -13,6 +14,22 @@ L.Icon.Default.mergeOptions({
     iconUrl: require('leaflet/dist/images/marker-icon.png').default?.src || require('leaflet/dist/images/marker-icon.png'),
     shadowUrl: require('leaflet/dist/images/marker-shadow.png').default?.src || require('leaflet/dist/images/marker-shadow.png'),
 });
+
+const AMENITY_OFFSETS = {
+    cafes: [
+        { name: 'Artisan Roasters', latOffset: 0.004, lngOffset: 0.005 },
+        { name: 'Morning Brew', latOffset: -0.005, lngOffset: -0.003 },
+        { name: 'Cafe Luxe', latOffset: 0.006, lngOffset: -0.006 },
+    ],
+    schools: [
+        { name: 'International Prep', latOffset: 0.012, lngOffset: 0.008 },
+        { name: 'Elite Academy', latOffset: -0.010, lngOffset: -0.011 },
+    ],
+    medical: [
+        { name: 'Premium Clinic', latOffset: 0.015, lngOffset: -0.005 },
+        { name: 'General Hospital', latOffset: -0.008, lngOffset: 0.012 },
+    ]
+};
 
 // Create dynamic divIcon based on active state using Tailwind classes for CSS animations
 const createCustomIcon = (isActive: boolean) => {
@@ -30,6 +47,31 @@ const createCustomIcon = (isActive: boolean) => {
         iconSize: [40, 40],
         iconAnchor: [20, 40],
         popupAnchor: [0, -40],
+    });
+};
+
+const createPoiIcon = (type: 'cafes' | 'schools' | 'medical') => {
+    let iconSvg = '';
+    let bgColor = '';
+    if (type === 'cafes') {
+        bgColor = '#8B5A2B';
+        iconSvg = `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="width:16px;height:16px;"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>`;
+    } else if (type === 'schools') {
+        bgColor = '#2B5A8B';
+        iconSvg = `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="width:16px;height:16px;"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`;
+    } else {
+        bgColor = '#8B2B2B';
+        iconSvg = `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="width:16px;height:16px;"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`;
+    }
+
+    return new L.DivIcon({
+        className: 'bg-transparent border-0',
+        html: `<div class="relative flex items-center justify-center transition-all duration-300 ease-out hover:scale-110 drop-shadow-md z-40" style="background-color: ${bgColor}; width: 28px; height: 28px; border-radius: 50%; border: 2px solid white;">
+            ${iconSvg}
+        </div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+        popupAnchor: [0, -14],
     });
 };
 
@@ -70,12 +112,54 @@ interface MapProps {
 
 export default function Map({ properties, activePropertyId }: MapProps) {
     const mapRef = useRef<L.Map>(null);
+    const [toggles, setToggles] = useState({
+        cafes: false,
+        schools: false,
+        medical: false
+    });
 
     // Find active property for controller
     const activeProperty = properties.find(p => p.id === activePropertyId);
 
+    // Determine the center for calculating POIs (use active property, or the first property)
+    const centerForPois = activeProperty || properties[0] || { coordinates: { lat: 34.05, lng: -118.5 } };
+
+    const handleToggle = (key: keyof typeof toggles) => {
+        setToggles(prev => ({ ...prev, [key]: !prev[key] }));
+    };
+
     return (
-        <div className="w-full h-full relative border-l border-white/10 z-0">
+        <div className="w-full h-full relative border-l border-white/10 z-0 flex">
+            {/* Amenities Floating Panel */}
+            <div className="absolute top-6 left-6 z-[1000] flex flex-col gap-2 pointer-events-auto">
+                <div className="bg-black/80 backdrop-blur-md border border-[#C5A880]/30 p-4 rounded-xl shadow-2xl">
+                    <h3 className="text-[#C5A880] text-xs font-semibold uppercase tracking-widest mb-4">Local Amenities</h3>
+                    <div className="flex flex-col gap-3">
+                        <button
+                            onClick={() => handleToggle('cafes')}
+                            className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-300 ${toggles.cafes ? 'bg-[#8B5A2B]/20 text-[#C5A880] border border-[#8B5A2B]/50' : 'bg-transparent text-white/60 hover:text-white border border-transparent hover:bg-white/5'}`}
+                        >
+                            <Coffee className="w-4 h-4" />
+                            <span className="text-sm font-medium">Cafes & Dining</span>
+                        </button>
+                        <button
+                            onClick={() => handleToggle('schools')}
+                            className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-300 ${toggles.schools ? 'bg-[#2B5A8B]/20 text-[#60A5FA] border border-[#2B5A8B]/50' : 'bg-transparent text-white/60 hover:text-white border border-transparent hover:bg-white/5'}`}
+                        >
+                            <GraduationCap className="w-4 h-4" />
+                            <span className="text-sm font-medium">Schools</span>
+                        </button>
+                        <button
+                            onClick={() => handleToggle('medical')}
+                            className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-300 ${toggles.medical ? 'bg-[#8B2B2B]/20 text-[#F87171] border border-[#8B2B2B]/50' : 'bg-transparent text-white/60 hover:text-white border border-transparent hover:bg-white/5'}`}
+                        >
+                            <Activity className="w-4 h-4" />
+                            <span className="text-sm font-medium">Medical</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <MapContainer
                 center={[34.05, -118.5]} // Default LA center
                 zoom={10}
@@ -89,6 +173,7 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
                 />
 
+                {/* Primary Property Markers */}
                 {properties.map((property) => {
                     const isActive = activePropertyId === property.id;
                     return (
@@ -112,12 +197,39 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                     );
                 })}
 
+                {/* POI Markers */}
+                {['cafes', 'schools', 'medical'].map((type) => {
+                    const amenityType = type as keyof typeof toggles;
+                    if (!toggles[amenityType]) return null;
+
+                    return AMENITY_OFFSETS[amenityType].map((poi, idx) => {
+                        const lat = centerForPois.coordinates.lat + poi.latOffset;
+                        const lng = centerForPois.coordinates.lng + poi.lngOffset;
+                        return (
+                            <Marker
+                                key={`${type}-${idx}`}
+                                position={[lat, lng]}
+                                icon={createPoiIcon(amenityType)}
+                                zIndexOffset={500}
+                            >
+                                <Popup className="luxury-popup amenity-popup">
+                                    <div style={{ padding: '2px', fontFamily: 'ui-sans-serif, system-ui, sans-serif' }}>
+                                        <strong style={{ display: 'block', fontSize: '13px', color: '#000' }}>
+                                            {poi.name}
+                                        </strong>
+                                    </div>
+                                </Popup>
+                            </Marker>
+                        );
+                    });
+                })}
+
                 <MapController activeProperty={activeProperty} properties={properties} />
             </MapContainer>
 
             {/* Overlays to preserve contrast on edges */}
-            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#0a0a0a]/80 to-transparent pointer-events-none z-[1000]" />
-            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a]/80 to-transparent pointer-events-none z-[1000]" />
+            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#0a0a0a]/80 to-transparent pointer-events-none z-[900]" />
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a]/80 to-transparent pointer-events-none z-[900]" />
 
             {/* Global styles for leaflet popup customization since we can't easily use tailwind inside it */}
             <style dangerouslySetInnerHTML={{
@@ -138,6 +250,12 @@ export default function Map({ properties, activePropertyId }: MapProps) {
         }
         .luxury-popup .leaflet-popup-tip {
           background: rgba(255, 255, 255, 0.9);
+        }
+        .amenity-popup .leaflet-popup-content-wrapper {
+          padding: 2px 4px;
+        }
+        .amenity-popup .leaflet-popup-content {
+          margin: 8px 10px;
         }
       `}} />
         </div>

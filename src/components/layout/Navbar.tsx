@@ -20,12 +20,15 @@ export default function Navbar() {
 
             {/* Navigation Links and CTA */}
             <div className="flex items-center space-x-8">
-                <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-sans text-white/90 font-medium">
+                <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-sans text-white/90 font-medium items-center">
                     <Link href="#properties" className="hover:text-[var(--color-accent)] transition-colors duration-300">
                         Properties
                     </Link>
                     <Link href="#agents" className="hover:text-[var(--color-accent)] transition-colors duration-300">
                         Agents
+                    </Link>
+                    <Link href="/sold" className="px-4 py-1.5 border border-[#C5A880]/30 hover:border-[#C5A880] text-[#C5A880] rounded hover:bg-[#C5A880]/10 transition-all duration-300 font-bold tracking-[0.2em] text-xs">
+                        [ Sold Portfolio ]
                     </Link>
                 </div>
 
