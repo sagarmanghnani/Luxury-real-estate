@@ -21,18 +21,40 @@ To finalize the lead capture engine, we need to connect the frontend to a Make.c
 ## Step 3: Define the Data Structure
 1. Back in Make.com, your webhook should say "Stop" or "Successfully determined."
 2. Go to your frontend application and submit a test lead through the Preference Quiz.
-3. Make.com will capture the payload, which looks like this:
+3. Make.com will capture the payload. Depending on their progress, it will look like this:
+
+   **Initial Capture (Partial Lead):**
    ```json
    {
+     "leadType": "partial",
      "propertySlug": "the-glass-pavilion",
      "propertyTitle": "The Glass Pavilion",
-     "intent": "High-Yield Investment",
-     "timeline": "Immediately",
      "name": "Bruce Wayne",
      "whatsapp": "+1 234 567 8900",
+     "intent": "",
+     "timeline": "",
      "submittedAt": "2026-02-24T12:00:00.000Z"
    }
    ```
+
+   **Completed Quiz (Premium Lead):**
+   ```json
+   {
+     "leadType": "premium",
+     "propertySlug": "the-glass-pavilion",
+     "propertyTitle": "The Glass Pavilion",
+     "name": "Bruce Wayne",
+     "whatsapp": "+1 234 567 8900",
+     "intent": "High-Yield Investment",
+     "timeline": "Immediately",
+     "submittedAt": "2026-02-24T12:00:15.000Z"
+   }
+   ```
+
+## Step 4: Logic Routing (Optional)
+You can use a **Router** module in Make.com to check the `leadType` property.
+- If `leadType` == `partial`: Wait 1 hour. If no "premium" lead came through for the same WhatsApp number, send a gentle follow-up sequence.
+- If `leadType` == `premium`: Immediately notify the sales team via Slack and send the Off-Market Dossier via WhatsApp.
 
 ## Step 4: Add the Output Action (e.g., WhatsApp or Google Sheets)
 1. In your Make.com scenario, add another module next to your Webhook trigger.

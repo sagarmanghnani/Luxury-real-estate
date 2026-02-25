@@ -15,12 +15,35 @@ interface PropertyCardProps {
 
 export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: PropertyCardProps) {
     const fallbackImage = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80';
-    const [imgSrc, setImgSrc] = useState(property.images[0] || fallbackImage);
+    const [imageIndex, setImageIndex] = useState(0);
 
-    // Ensure image source is updated when property changes
+    const [imageError, setImageError] = useState(false);
+
+    // Reset image index when navigating to a new property or if property data changes
     useEffect(() => {
-        setImgSrc(property.images[0] || fallbackImage);
-    }, [property.images]);
+        setImageIndex(0);
+        setImageError(false);
+    }, [property.id]);
+
+    const imgSrc = imageError ? fallbackImage : (property.images[imageIndex] || fallbackImage);
+
+    const handleNextImage = (e: React.MouseEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (property.images.length > 1) {
+            setImageIndex((prev) => (prev + 1) % property.images.length);
+            setImageError(false);
+        }
+    };
+
+    const handlePrevImage = (e: React.MouseEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (property.images.length > 1) {
+            setImageIndex((prev) => (prev - 1 + property.images.length) % property.images.length);
+            setImageError(false);
+        }
+    };
 
     return (
         <Link href={`/properties/${property.slug}`} className="block">
@@ -46,7 +69,7 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: P
                             alt={property.title}
                             fill
                             unoptimized
-                            onError={() => setImgSrc(fallbackImage)}
+                            onError={() => setImageError(true)}
                             className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             priority
@@ -57,14 +80,22 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: P
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/20 pointer-events-none" />
 
                     {/* Navigation Arrows for luxury feel */}
-                    <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <button className="p-3 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-white hover:text-black transition-all duration-500 pointer-events-auto">
-                            <ChevronLeft className="w-5 h-5" />
-                        </button>
-                        <button className="p-3 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-white hover:text-black transition-all duration-500 pointer-events-auto">
-                            <ChevronRight className="w-5 h-5" />
-                        </button>
-                    </div>
+                    {property.images.length > 1 && (
+                        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                            <button
+                                onClick={handlePrevImage}
+                                className="p-3 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-white hover:text-black transition-all duration-500 pointer-events-auto"
+                            >
+                                <ChevronLeft className="w-5 h-5" />
+                            </button>
+                            <button
+                                onClick={handleNextImage}
+                                className="p-3 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-white hover:text-black transition-all duration-500 pointer-events-auto"
+                            >
+                                <ChevronRight className="w-5 h-5" />
+                            </button>
+                        </div>
+                    )}
 
                     <div className="absolute bottom-6 left-6 pl-4 border-l-2 border-[#C5A880] text-[10px] uppercase tracking-[0.2em] text-white/90 drop-shadow-md">
                         {property.status}

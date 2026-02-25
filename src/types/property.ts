@@ -26,6 +26,7 @@ export interface Property {
     features: PropertyFeatures;
     images: string[];
     status: 'Active' | 'Pending' | 'Sold';
+    propertyType: 'Villa' | 'Mansion' | 'Penthouse' | 'Estate' | 'Modern';
     virtualTourUrl?: string;
     neighborhood?: NeighborhoodData;
 }

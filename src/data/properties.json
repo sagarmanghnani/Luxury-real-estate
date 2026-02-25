@@ -4,6 +4,7 @@
     "title": "Modern Glass Estate",
     "slug": "modern-glass-estate-beverly-hills",
     "price": 8500000,
+    "propertyType": "Modern",
     "address": "1045 Summit Drive, Beverly Hills, CA 90210",
     "coordinates": {
       "lng": -118.4136,
@@ -31,6 +32,7 @@
     "title": "Oceanfront Minimalist Villa",
     "slug": "oceanfront-minimalist-villa-malibu",
     "price": 12400000,
+    "propertyType": "Villa",
     "address": "22102 Pacific Coast Hwy, Malibu, CA 90265",
     "coordinates": {
       "lng": -118.6508,
@@ -51,6 +53,363 @@
       "schoolDistrictRating": "10/10",
       "nearestMetro": "5.0 miles",
       "walkabilityScore": 65
+    }
+  },
+  {
+    "id": "prop-003",
+    "title": "The Bel Air Mansion",
+    "slug": "the-bel-air-mansion",
+    "price": 24500000,
+    "propertyType": "Mansion",
+    "address": "10979 Chalon Rd, Los Angeles, CA 90077",
+    "coordinates": {
+      "lng": -118.4485,
+      "lat": 34.0848
+    },
+    "features": {
+      "beds": 8,
+      "baths": 12,
+      "sqft": 18000
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687931-cebf581d6f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "20 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "3.5 miles",
+      "walkabilityScore": 40
+    }
+  },
+  {
+    "id": "prop-004",
+    "title": "Hollywood Hills Compound",
+    "slug": "hollywood-hills-compound",
+    "price": 14900000,
+    "propertyType": "Estate",
+    "address": "9012 St Ives Dr, Los Angeles, CA 90069",
+    "coordinates": {
+      "lng": -118.3965,
+      "lat": 34.0952
+    },
+    "features": {
+      "beds": 5,
+      "baths": 7,
+      "sqft": 9500
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "7/10",
+      "nearestMetro": "2.0 miles",
+      "walkabilityScore": 55
+    }
+  },
+  {
+    "id": "prop-005",
+    "title": "Downtown LA Penthouse",
+    "slug": "dtla-penthouse",
+    "price": 5200000,
+    "propertyType": "Penthouse",
+    "address": "800 W Olympic Blvd UNIT 5406, Los Angeles, CA 90015",
+    "coordinates": {
+      "lng": -118.2657,
+      "lat": 34.0453
+    },
+    "features": {
+      "beds": 3,
+      "baths": 4,
+      "sqft": 4500
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "5 min",
+      "schoolDistrictRating": "5/10",
+      "nearestMetro": "0.1 miles",
+      "walkabilityScore": 98
+    }
+  },
+  {
+    "id": "prop-006",
+    "title": "Opulent Palm Jumeirah Villa",
+    "slug": "palm-jumeirah-villa-dubai",
+    "price": 18500000,
+    "propertyType": "Villa",
+    "address": "Frond M, Palm Jumeirah, Dubai, UAE",
+    "coordinates": {
+      "lng": 55.1228,
+      "lat": 25.1124
+    },
+    "features": {
+      "beds": 6,
+      "baths": 7,
+      "sqft": 14000
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "25 min",
+      "schoolDistrictRating": "N/A",
+      "nearestMetro": "10 min",
+      "walkabilityScore": 10
+    }
+  },
+  {
+    "id": "prop-007",
+    "title": "Burj Khalifa Penthouse",
+    "slug": "burj-khalifa-penthouse-dubai",
+    "price": 22000000,
+    "propertyType": "Penthouse",
+    "address": "1 Sheikh Mohammed bin Rashid Blvd, Downtown Dubai, UAE",
+    "coordinates": {
+      "lng": 55.2744,
+      "lat": 25.1972
+    },
+    "features": {
+      "beds": 4,
+      "baths": 5,
+      "sqft": 8800
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "10 min",
+      "schoolDistrictRating": "N/A",
+      "nearestMetro": "On-site",
+      "walkabilityScore": 85
+    }
+  },
+  {
+    "id": "prop-008",
+    "title": "Star Island Estate",
+    "slug": "star-island-estate-miami",
+    "price": 35000000,
+    "propertyType": "Estate",
+    "address": "46 Star Island Dr, Miami Beach, FL 33139",
+    "coordinates": {
+      "lng": -80.1517,
+      "lat": 25.7770
+    },
+    "features": {
+      "beds": 9,
+      "baths": 11,
+      "sqft": 22000
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "3 miles",
+      "walkabilityScore": 30
+    }
+  },
+  {
+    "id": "prop-009",
+    "title": "South Beach Penthouse",
+    "slug": "south-beach-penthouse-miami",
+    "price": 11000000,
+    "propertyType": "Penthouse",
+    "address": "100 South Pointe Dr, Miami Beach, FL 33139",
+    "coordinates": {
+      "lng": -80.1340,
+      "lat": 25.7681
+    },
+    "features": {
+      "beds": 4,
+      "baths": 4,
+      "sqft": 5200
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "20 min",
+      "schoolDistrictRating": "7/10",
+      "nearestMetro": "5 miles",
+      "walkabilityScore": 95
+    }
+  },
+  {
+    "id": "prop-010",
+    "title": "Coral Gables Mansion",
+    "slug": "coral-gables-mansion-miami",
+    "price": 16500000,
+    "propertyType": "Mansion",
+    "address": "9000 Arvida Ln, Coral Gables, FL 33156",
+    "coordinates": {
+      "lng": -80.2646,
+      "lat": 25.6811
+    },
+    "features": {
+      "beds": 7,
+      "baths": 9,
+      "sqft": 13500
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "30 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "4 miles",
+      "walkabilityScore": 25
+    }
+  },
+  {
+    "id": "prop-011",
+    "title": "Central Park Penthouse",
+    "slug": "central-park-penthouse-nyc",
+    "price": 45000000,
+    "propertyType": "Penthouse",
+    "address": "220 Central Park S, New York, NY 10019",
+    "coordinates": {
+      "lng": -73.9806,
+      "lat": 40.7670
+    },
+    "features": {
+      "beds": 5,
+      "baths": 6,
+      "sqft": 7500
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "10 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "0.1 miles",
+      "walkabilityScore": 100
+    }
+  },
+  {
+    "id": "prop-012",
+    "title": "West Village Townhome",
+    "slug": "west-village-townhome-nyc",
+    "price": 18900000,
+    "propertyType": "Estate",
+    "address": "11 W 10th St, New York, NY 10011",
+    "coordinates": {
+      "lng": -73.9961,
+      "lat": 40.7335
+    },
+    "features": {
+      "beds": 6,
+      "baths": 6,
+      "sqft": 6800
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "0.2 miles",
+      "walkabilityScore": 99
+    }
+  },
+  {
+    "id": "prop-013",
+    "title": "Tribeca Modern Loft",
+    "slug": "tribeca-modern-loft-nyc",
+    "price": 9500000,
+    "propertyType": "Modern",
+    "address": "153 Franklin St, New York, NY 10013",
+    "coordinates": {
+      "lng": -74.0076,
+      "lat": 40.7188
+    },
+    "features": {
+      "beds": 3,
+      "baths": 4,
+      "sqft": 4200
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687931-cebf581d6f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "10 min",
+      "schoolDistrictRating": "10/10",
+      "nearestMetro": "0.1 miles",
+      "walkabilityScore": 97
+    }
+  },
+  {
+    "id": "prop-014",
+    "title": "Pacific Heights Mansion",
+    "slug": "pacific-heights-mansion-sf",
+    "price": 28500000,
+    "propertyType": "Mansion",
+    "address": "2840 Broadway, San Francisco, CA 94115",
+    "coordinates": {
+      "lng": -122.4439,
+      "lat": 37.7946
+    },
+    "features": {
+      "beds": 7,
+      "baths": 8,
+      "sqft": 12500
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "1.5 miles",
+      "walkabilityScore": 90
+    }
+  },
+  {
+    "id": "prop-015",
+    "title": "Sea Cliff Contemporary",
+    "slug": "sea-cliff-contemporary-sf",
+    "price": 15400000,
+    "propertyType": "Modern",
+    "address": "224 Sea Cliff Ave, San Francisco, CA 94121",
+    "coordinates": {
+      "lng": -122.4880,
+      "lat": 37.7884
+    },
+    "features": {
+      "beds": 4,
+      "baths": 5,
+      "sqft": 6100
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    ],
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "25 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "3 miles",
+      "walkabilityScore": 75
     }
   }
 ]

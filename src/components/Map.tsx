@@ -39,13 +39,24 @@ function MapController({ activeProperty, properties }: { activeProperty?: Proper
 
     useEffect(() => {
         if (activeProperty) {
-            // Using panTo instead of flyTo for a snappier, more robust "app-like" feel
-            // flyTo can feel sluggish if the user hovers rapidly between cards
-            map.panTo([activeProperty.coordinates.lat, activeProperty.coordinates.lng], {
-                animate: true,
-                duration: 0.8,
-                easeLinearity: 0.1
-            });
+            const targetLatLng = L.latLng(activeProperty.coordinates.lat, activeProperty.coordinates.lng);
+            const currentCenter = map.getCenter();
+            const distance = currentCenter.distanceTo(targetLatLng);
+
+            // If the property is more than 50km away, fly to it to avoid a hyper-speed pan across the globe
+            if (distance > 50000) {
+                map.flyTo(targetLatLng, 12, {
+                    animate: true,
+                    duration: 1.5
+                });
+            } else {
+                // For nearby properties, a quick pan is snappier and feels better
+                map.panTo(targetLatLng, {
+                    animate: true,
+                    duration: 0.8,
+                    easeLinearity: 0.1
+                });
+            }
         }
     }, [activeProperty, map]);
 
