@@ -84,24 +84,34 @@ function MapController({ activeProperty }: { activeProperty?: Property }) {
     const map = useMap();
 
     useEffect(() => {
-        if (activeProperty) {
-            const targetLatLng = L.latLng(activeProperty.coordinates.lat, activeProperty.coordinates.lng);
-            const currentCenter = map.getCenter();
-            const distance = currentCenter.distanceTo(targetLatLng);
+        if (activeProperty && activeProperty.coordinates?.lat != null && activeProperty.coordinates?.lng != null) {
+            const lat = Number(activeProperty.coordinates.lat);
+            const lng = Number(activeProperty.coordinates.lng);
 
-            // If the property is more than 50km away, fly to it to avoid a hyper-speed pan across the globe
-            if (distance > 50000) {
-                map.flyTo(targetLatLng, 12, {
-                    animate: true,
-                    duration: 1.5
-                });
-            } else {
-                // For nearby properties, a quick pan is snappier and feels better
-                map.panTo(targetLatLng, {
-                    animate: true,
-                    duration: 0.8,
-                    easeLinearity: 0.1
-                });
+            // Strict check: leaflet methods fail completely if passing NaN
+            if (!isNaN(lat) && !isNaN(lng)) {
+                try {
+                    const targetLatLng = L.latLng(lat, lng);
+                    const currentCenter = map.getCenter();
+                    const distance = currentCenter.distanceTo(targetLatLng);
+
+                    // If the property is more than 50km away, fly to it to avoid a hyper-speed pan across the globe
+                    if (distance > 50000) {
+                        map.flyTo(targetLatLng, 12, {
+                            animate: true,
+                            duration: 1.5
+                        });
+                    } else {
+                        // For nearby properties, a quick pan is snappier and feels better
+                        map.panTo(targetLatLng, {
+                            animate: true,
+                            duration: 0.8,
+                            easeLinearity: 0.1
+                        });
+                    }
+                } catch (err) {
+                    console.error("Map flyTo/panTo error:", err);
+                }
             }
         }
     }, [activeProperty, map]);
@@ -180,10 +190,20 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                 {/* Primary Property Markers */}
                 {properties.map((property) => {
                     const isActive = activePropertyId === property.id;
+                    if (
+                        !property.coordinates ||
+                        property.coordinates.lat == null ||
+                        property.coordinates.lng == null ||
+                        isNaN(Number(property.coordinates.lat)) ||
+                        isNaN(Number(property.coordinates.lng))
+                    ) {
+                        return null; // Skip invalid coordinates to prevent Leaflet NaN Error
+                    }
+
                     return (
                         <Marker
                             key={property.id}
-                            position={[property.coordinates.lat, property.coordinates.lng]}
+                            position={[Number(property.coordinates.lat), Number(property.coordinates.lng)]}
                             icon={createCustomIcon(isActive)}
                             zIndexOffset={isActive ? 1000 : 0}
                         >
@@ -207,8 +227,13 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                     if (!toggles[amenityType]) return null;
 
                     return AMENITY_OFFSETS[amenityType].map((poi, idx) => {
-                        const lat = centerForPois.coordinates.lat + poi.latOffset;
-                        const lng = centerForPois.coordinates.lng + poi.lngOffset;
+                        const baseLat = Number(centerForPois.coordinates?.lat);
+                        const baseLng = Number(centerForPois.coordinates?.lng);
+
+                        if (isNaN(baseLat) || isNaN(baseLng)) return null;
+
+                        const lat = baseLat + poi.latOffset;
+                        const lng = baseLng + poi.lngOffset;
                         return (
                             <Marker
                                 key={`${type}-${idx}`}
