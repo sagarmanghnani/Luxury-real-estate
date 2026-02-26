@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Property } from '@/types/property';
 import propertiesData from '@/data/properties.json';
 import { VirtualTour } from '@/components/property/VirtualTour';
 import { NeighborhoodDataPanel } from '@/components/property/NeighborhoodDataPanel';
 import { RentalYieldCalculator } from '@/components/property/RentalYieldCalculator';
 import { LeadCaptureSidebar } from '@/components/property/LeadCaptureSidebar';
-import { BedDouble, Bath, SquareSigma, MapPin } from 'lucide-react';
+import { BedDouble, Bath, SquareSigma, MapPin, ChevronLeft } from 'lucide-react';
 
 // Next.js feature for Static Site Generation
 export async function generateStaticParams() {
@@ -35,7 +36,18 @@ export default async function PropertyPage({
     }).format(property.price);
 
     return (
-        <main className="min-h-screen bg-black text-white pb-24">
+        <main className="min-h-screen bg-black text-white pb-24 relative">
+            {/* Back Button */}
+            <div className="absolute top-6 left-6 md:top-8 md:left-8 z-50">
+                <Link
+                    href="/"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/40 hover:bg-black/80 backdrop-blur-md border border-white/10 text-white text-sm font-medium shadow-xl transition-all hover:scale-105"
+                >
+                    <ChevronLeft className="w-4 h-4" />
+                    Back to Search
+                </Link>
+            </div>
+
             {/* Hero Image Section */}
             <div className="relative w-full h-[60vh] md:h-[75vh]">
                 <Image

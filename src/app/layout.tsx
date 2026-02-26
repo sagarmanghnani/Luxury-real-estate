@@ -30,10 +30,25 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased bg-black text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased bg-black text-white flex flex-col min-h-screen`}
         suppressHydrationWarning
       >
-        {children}
+        <div className="flex-1">
+          {children}
+        </div>
+        <footer className="py-6 mt-12 text-center border-t border-white/10 bg-black">
+          <p className="text-xs text-neutral-500 font-light tracking-wide">
+            Designed & Developed by{' '}
+            <a
+              href="https://velocitydevs.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-neutral-400 hover:text-white transition-colors"
+            >
+              VelocityDev
+            </a>
+          </p>
+        </footer>
       </body>
     </html>
   );
