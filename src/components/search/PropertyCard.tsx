@@ -21,13 +21,13 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: P
 
     // State resets are handled by component remounts via key={property.id}
 
-    const imgSrc = imageError ? fallbackImage : (property.images[imageIndex] || fallbackImage);
+    const imgSrc = imageError ? fallbackImage : (property.media.heroImages[imageIndex] || fallbackImage);
 
     const handleNextImage = (e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
-        if (property.images.length > 1) {
-            setImageIndex((prev) => (prev + 1) % property.images.length);
+        if (property.media.heroImages.length > 1) {
+            setImageIndex((prev) => (prev + 1) % property.media.heroImages.length);
             setImageError(false);
         }
     };
@@ -35,8 +35,8 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: P
     const handlePrevImage = (e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
-        if (property.images.length > 1) {
-            setImageIndex((prev) => (prev - 1 + property.images.length) % property.images.length);
+        if (property.media.heroImages.length > 1) {
+            setImageIndex((prev) => (prev - 1 + property.media.heroImages.length) % property.media.heroImages.length);
             setImageError(false);
         }
     };
@@ -60,23 +60,35 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: P
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                     >
-                        <Image
-                            src={imgSrc}
-                            alt={property.title}
-                            fill
-                            unoptimized
-                            onError={() => setImageError(true)}
-                            className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            priority
-                        />
+                        {imgSrc.match(/\.(mp4|webm)$/i) ? (
+                            <video
+                                src={imgSrc}
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                                onError={() => setImageError(true)}
+                            />
+                        ) : (
+                            <Image
+                                src={imgSrc}
+                                alt={property.title}
+                                fill
+                                unoptimized
+                                onError={() => setImageError(true)}
+                                className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                priority
+                            />
+                        )}
                     </motion.div>
 
                     {/* Subtle Vignette on Image */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/20 pointer-events-none" />
 
                     {/* Navigation Arrows for luxury feel */}
-                    {property.images.length > 1 && (
+                    {property.media.heroImages.length > 1 && (
                         <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                             <button
                                 onClick={handlePrevImage}

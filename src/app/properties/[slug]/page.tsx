@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { Property } from '@/types/property';
 import propertiesData from '@/data/properties.json';
 import { VirtualTour } from '@/components/property/VirtualTour';
+import { HeroGallery } from '@/components/property/HeroGallery';
+import { BentoGrid } from '@/components/property/BentoGrid';
 import { NeighborhoodDataPanel } from '@/components/property/NeighborhoodDataPanel';
 import { RentalYieldCalculator } from '@/components/property/RentalYieldCalculator';
 import { LeadCaptureSidebar } from '@/components/property/LeadCaptureSidebar';
@@ -49,38 +51,7 @@ export default async function PropertyPage({
             </div>
 
             {/* Hero Image Section */}
-            <div className="relative w-full h-[60vh] md:h-[75vh]">
-                <Image
-                    src={property.images[0]}
-                    alt={property.title}
-                    fill
-                    className="object-cover"
-                    priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-
-                {/* Title and Key Details Overlay */}
-                <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 md:pb-16 max-w-7xl mx-auto space-y-4">
-                    <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                        <div>
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-4">
-                                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                                <span className="text-xs font-semibold uppercase tracking-widest text-white">{property.status}</span>
-                            </div>
-                            <h1 className="text-4xl md:text-6xl font-black mb-2 tracking-tight leading-tight">{property.title}</h1>
-                            <div className="flex items-center text-neutral-300 text-sm md:text-base gap-2">
-                                <MapPin className="w-4 h-4" />
-                                <p>{property.address}</p>
-                            </div>
-                        </div>
-
-                        <div className="text-left md:text-right">
-                            <p className="text-sm font-medium text-neutral-400 uppercase tracking-widest mb-1">Asking Price</p>
-                            <p className="text-4xl md:text-5xl font-light tracking-tight">{formattedPrice}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <HeroGallery property={property} />
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
 
@@ -137,6 +108,12 @@ export default async function PropertyPage({
                             Every detail has been meticulously curated to offer an unparalleled lifestyle of comfort and elegance.
                             Floor-to-ceiling glass walls seamlessly blend the indoor and outdoor spaces, offering sweeping, majestic views of the surrounding landscape.
                         </p>
+
+                        {/* Distinctive Bento Grid Image Layout */}
+                        {property.media.gallery.length >= 6 && (
+                            <BentoGrid images={property.media.gallery.slice(3, 6)} />
+                        )}
+
                         <p>
                             The state-of-the-art chef&apos;s kitchen features imported Italian marble countertops, custom cabinetry, and top-of-the-line appliances.
                             Retreat to the opulent primary suite, complete with a spa-like bathroom, dual vanity sinks, and an expansive walk-in closet.

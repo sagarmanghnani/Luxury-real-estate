@@ -16,6 +16,12 @@ export interface NeighborhoodData {
     walkabilityScore: number;
 }
 
+export interface PropertyMedia {
+    heroImages: string[];
+    gallery: string[];
+    cinematicVideo?: string;
+}
+
 export interface Property {
     id: string;
     title: string;
@@ -24,7 +30,7 @@ export interface Property {
     address: string;
     coordinates: Coordinates;
     features: PropertyFeatures;
-    images: string[];
+    media: PropertyMedia;
     status: 'Active' | 'Pending' | 'Sold';
     propertyType: 'Villa' | 'Mansion' | 'Penthouse' | 'Estate' | 'Modern';
     virtualTourUrl?: string;
