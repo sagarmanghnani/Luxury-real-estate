@@ -5,8 +5,17 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Property } from '@/types/property';
 import { MapPin, Expand, Play } from 'lucide-react';
-import ImmersiveLightbox from './ImmersiveLightbox';
-import CinematicVideoPlayer from './CinematicVideoPlayer';
+import dynamic from 'next/dynamic';
+
+const ImmersiveLightbox = dynamic(() => import('./ImmersiveLightbox'), {
+    ssr: false,
+    loading: () => <div className="fixed inset-0 z-[9999] bg-black/80 flex items-center justify-center"><div className="w-8 h-8 rounded-full border-t-2 border-[#C5A880] animate-spin" /></div>
+});
+
+const CinematicVideoPlayer = dynamic(() => import('./CinematicVideoPlayer'), {
+    ssr: false,
+    loading: () => <div className="fixed inset-0 z-[9999] bg-black flex items-center justify-center"><div className="w-8 h-8 rounded-full border-t-2 border-white animate-spin" /></div>
+});
 
 interface HeroGalleryProps {
     property: Property;
@@ -51,7 +60,6 @@ export function HeroGallery({ property }: HeroGalleryProps) {
                             className="object-cover"
                             priority
                             sizes="100vw"
-                            unoptimized
                         />
                     </motion.div>
                 </AnimatePresence>

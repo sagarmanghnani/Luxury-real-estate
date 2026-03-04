@@ -97,7 +97,6 @@ export default function ImmersiveLightbox({ media, onClose }: ImmersiveLightboxP
                             className="object-contain"
                             sizes="100vw"
                             priority
-                            unoptimized
                         />
                     </motion.div>
                 </AnimatePresence>

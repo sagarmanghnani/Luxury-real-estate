@@ -71,11 +71,9 @@ export default function SoldCard({ property }: SoldCardProps) {
                                 src={imgSrc}
                                 alt={property.title}
                                 fill
-                                unoptimized
                                 onError={() => setImageError(true)}
                                 className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                priority
                             />
                         )}
                     </motion.div>

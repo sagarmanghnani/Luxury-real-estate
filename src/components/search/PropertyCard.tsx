@@ -11,9 +11,10 @@ interface PropertyCardProps {
     property: Property;
     onMouseEnter: (id: string) => void;
     onMouseLeave: () => void;
+    priority?: boolean;
 }
 
-export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: PropertyCardProps) {
+export default function PropertyCard({ property, onMouseEnter, onMouseLeave, priority = false }: PropertyCardProps) {
     const fallbackImage = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80';
     const [imageIndex, setImageIndex] = useState(0);
 
@@ -75,11 +76,10 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave }: P
                                 src={imgSrc}
                                 alt={property.title}
                                 fill
-                                unoptimized
                                 onError={() => setImageError(true)}
                                 className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                priority
+                                priority={priority}
                             />
                         )}
                     </motion.div>

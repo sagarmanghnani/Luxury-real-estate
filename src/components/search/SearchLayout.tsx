@@ -95,10 +95,11 @@ export default function SearchLayout() {
                                 </button>
                             </div>
                         ) : (
-                            filteredProperties.map((property) => (
+                            filteredProperties.map((property, index) => (
                                 <PropertyCard
                                     key={property.id}
                                     property={property}
+                                    priority={index < 4}
                                     onMouseEnter={setActivePropertyId}
                                     onMouseLeave={() => setActivePropertyId(null)}
                                 />
