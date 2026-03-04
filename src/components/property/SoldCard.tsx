@@ -63,6 +63,7 @@ export default function SoldCard({ property }: SoldCardProps) {
                                 loop
                                 muted
                                 playsInline
+                                preload="none"
                                 className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
                                 onError={() => setImageError(true)}
                             />
@@ -73,7 +74,8 @@ export default function SoldCard({ property }: SoldCardProps) {
                                 fill
                                 onError={() => setImageError(true)}
                                 className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                quality={70}
                             />
                         )}
                     </motion.div>
@@ -86,12 +88,14 @@ export default function SoldCard({ property }: SoldCardProps) {
                         <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                             <button
                                 onClick={handlePrevImage}
+                                aria-label="Previous Image"
                                 className="p-3 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-[#C5A880] hover:text-black transition-all duration-500 pointer-events-auto"
                             >
                                 <ChevronLeft className="w-5 h-5" />
                             </button>
                             <button
                                 onClick={handleNextImage}
+                                aria-label="Next Image"
                                 className="p-3 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-[#C5A880] hover:text-black transition-all duration-500 pointer-events-auto"
                             >
                                 <ChevronRight className="w-5 h-5" />

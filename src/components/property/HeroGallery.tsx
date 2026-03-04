@@ -92,6 +92,7 @@ export function HeroGallery({ property }: HeroGalleryProps) {
                                 {property.media.cinematicVideo && (
                                     <button
                                         onClick={() => setIsVideoOpen(true)}
+                                        aria-label="Play cinematic video"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-medium transition-all group"
                                     >
                                         <Play className="w-4 h-4 fill-white group-hover:scale-110 transition-transform" />
@@ -100,6 +101,7 @@ export function HeroGallery({ property }: HeroGalleryProps) {
                                 )}
                                 <button
                                     onClick={() => setIsLightboxOpen(true)}
+                                    aria-label="Open image gallery"
                                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-medium transition-all group"
                                 >
                                     <Expand className="w-4 h-4 group-hover:scale-110 transition-transform" />

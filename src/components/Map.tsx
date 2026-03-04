@@ -6,6 +6,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Property } from '@/types/property';
 import { Coffee, GraduationCap, Activity } from 'lucide-react';
+import Link from 'next/link';
 
 // Fix for default Leaflet icons in Next.js
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -208,14 +209,14 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                             zIndexOffset={isActive ? 1000 : 0}
                         >
                             <Popup className="luxury-popup">
-                                <a href={`/properties/${property.slug}`} style={{ textDecoration: 'none' }}>
+                                <Link href={`/properties/${property.slug}`} style={{ textDecoration: 'none' }}>
                                     <div style={{ padding: '4px', fontFamily: 'ui-sans-serif, system-ui, sans-serif' }}>
                                         <strong style={{ display: 'block', fontSize: '14px', marginBottom: '4px', color: '#000' }}>
                                             ${(property.price / 1000000).toFixed(1)}M
                                         </strong>
                                         <span style={{ color: '#C5A880', fontSize: '12px', fontWeight: 'bold' }}>View Details &rarr;</span>
                                     </div>
-                                </a>
+                                </Link>
                             </Popup>
                         </Marker>
                     );

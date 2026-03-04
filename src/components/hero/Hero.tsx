@@ -2,21 +2,31 @@
 
 import { motion } from 'framer-motion';
 import FloatingSearchBar from './FloatingSearchBar';
+import Image from 'next/image';
 
 export default function Hero() {
     return (
         <section className="relative w-full h-screen overflow-hidden">
+            {/* Optimized Preloaded Background Image (Acts as Poster) */}
+            <Image
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                alt="Luxury Estate"
+                fill
+                priority
+                quality={60}
+                className="object-cover"
+                sizes="100vw"
+            />
             {/* Background Video */}
             <video
                 autoPlay
                 loop
                 muted
                 playsInline
+                preload="auto"
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                poster="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             >
                 <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-mansion-at-sunset-31295-large.mp4" type="video/mp4" />
-                {/* Fallback image is purely visual from poster */}
             </video>
 
             {/* Gradient Overlay for legibility & cinematic vignette */}
