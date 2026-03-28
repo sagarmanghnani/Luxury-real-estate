@@ -20,9 +20,9 @@ export function RentalYieldCalculator({ propertyPrice }: RentalYieldCalculatorPr
     const netYield = purchasePrice > 0 ? (((monthlyRent * 12) - annualExpenses) / purchasePrice) * 100 : 0;
 
     const formatCurrency = (value: number) => {
-        return new Intl.NumberFormat('en-US', {
+        return new Intl.NumberFormat('en-AE', {
             style: 'currency',
-            currency: 'USD',
+            currency: 'AED',
             maximumFractionDigits: 0,
         }).format(value);
     };

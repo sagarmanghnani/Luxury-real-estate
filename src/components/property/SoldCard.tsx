@@ -113,7 +113,7 @@ export default function SoldCard({ property }: SoldCardProps) {
                 <div className="p-8 flex flex-col bg-gradient-to-b from-transparent to-black/40 grow">
                     <div className="flex justify-between items-end mb-4">
                         <h3 className="text-2xl font-serif text-white/90 tracking-wide font-light">
-                            ${(property.price / 1000000).toFixed(1)}M
+                            AED {(property.price / 1000000).toFixed(1)}M
                         </h3>
                         {/* Sold Label */}
                         <div className="text-[10px] uppercase font-sans text-white/40 tracking-[0.2em]">Recently Closed</div>

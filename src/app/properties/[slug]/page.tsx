@@ -31,9 +31,9 @@ export default async function PropertyPage({
     }
 
     // Format price
-    const formattedPrice = new Intl.NumberFormat('en-US', {
+    const formattedPrice = new Intl.NumberFormat('en-AE', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'AED',
         maximumFractionDigits: 0,
     }).format(property.price);
 

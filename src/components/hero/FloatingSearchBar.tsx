@@ -8,12 +8,12 @@ const propertyTypes = ['All', 'Villa', 'Mansion', 'Penthouse', 'Estate', 'Modern
 
 const priceRanges = [
     { label: 'Any Price', min: 0, max: 100000000 },
-    { label: 'Under $10M', min: 0, max: 10000000 },
-    { label: '$10M - $20M', min: 10000000, max: 20000000 },
-    { label: '$20M+', min: 20000000, max: 100000000 },
+    { label: 'Under AED 10M', min: 0, max: 10000000 },
+    { label: 'AED 10M - AED 20M', min: 10000000, max: 20000000 },
+    { label: 'AED 20M+', min: 20000000, max: 100000000 },
 ];
 
-const locations = ['Any Location', 'Beverly Hills, CA', 'Malibu, CA', 'Los Angeles, CA', 'Dubai, UAE', 'Miami, FL', 'New York, NY', 'San Francisco, CA'];
+const locations = ['Any Location', 'Emirates Hills, Dubai', 'Palm Jumeirah, Dubai', 'Downtown Dubai', 'Dubai Marina', 'Al Barari, Dubai', 'Business Bay, Dubai', 'Jumeirah Golf Estates'];
 
 export default function FloatingSearchBar() {
     const [location, setLocation] = useState(locations[0]);

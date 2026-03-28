@@ -34,9 +34,9 @@ export function HeroGallery({ property }: HeroGalleryProps) {
         return () => clearInterval(interval);
     }, [property.media.heroImages]);
 
-    const formattedPrice = new Intl.NumberFormat('en-US', {
+    const formattedPrice = new Intl.NumberFormat('en-AE', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'AED',
         maximumFractionDigits: 0,
     }).format(property.price);
 

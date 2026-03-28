@@ -117,7 +117,7 @@ export default function PropertyCard({ property, onMouseEnter, onMouseLeave, pri
                 {/* Property Details */}
                 <div className="p-8 flex flex-col bg-gradient-to-b from-transparent to-black/10">
                     <h3 className="text-3xl font-serif text-white tracking-wide mb-2 flex items-center justify-between font-light">
-                        ${property.price.toLocaleString()}
+                        AED {property.price.toLocaleString()}
                     </h3>
                     <p className="font-sans text-base text-white/60 mb-6 font-light tracking-wide">{property.title}</p>
 

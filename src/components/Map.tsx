@@ -137,7 +137,7 @@ export default function Map({ properties, activePropertyId }: MapProps) {
     const activeProperty = properties.find(p => p.id === activePropertyId);
 
     // Determine the center for calculating POIs (use active property, or the first property)
-    const centerForPois = activeProperty || properties[0] || { coordinates: { lat: 34.05, lng: -118.5 } };
+    const centerForPois = activeProperty || properties[0] || { coordinates: { lat: 25.2048, lng: 55.2708 } };
 
     const handleToggle = (key: keyof typeof toggles) => {
         setToggles(prev => ({ ...prev, [key]: !prev[key] }));
@@ -176,7 +176,7 @@ export default function Map({ properties, activePropertyId }: MapProps) {
             </div>
 
             <MapContainer
-                center={[34.05, -118.5]} // Default LA center
+                center={[25.2048, 55.2708]} // Default Dubai center
                 zoom={10}
                 scrollWheelZoom={false}
                 className="w-full h-full bg-[#0a0a0a]"
@@ -212,7 +212,7 @@ export default function Map({ properties, activePropertyId }: MapProps) {
                                 <Link href={`/properties/${property.slug}`} style={{ textDecoration: 'none' }}>
                                     <div style={{ padding: '4px', fontFamily: 'ui-sans-serif, system-ui, sans-serif' }}>
                                         <strong style={{ display: 'block', fontSize: '14px', marginBottom: '4px', color: '#000' }}>
-                                            ${(property.price / 1000000).toFixed(1)}M
+                                            AED {(property.price / 1000000).toFixed(1)}M
                                         </strong>
                                         <span style={{ color: '#C5A880', fontSize: '12px', fontWeight: 'bold' }}>View Details &rarr;</span>
                                     </div>

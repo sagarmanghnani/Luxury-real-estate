@@ -26,9 +26,9 @@ export default function FilterBar({ propertyCount, filters, setFilters, sortOrde
 
     const priceRanges = [
         { label: 'Any Price', min: 0, max: 100000000 },
-        { label: 'Under $10M', min: 0, max: 10000000 },
-        { label: '$10M - $20M', min: 10000000, max: 20000000 },
-        { label: '$20M+', min: 20000000, max: 100000000 },
+        { label: 'Under AED 10M', min: 0, max: 10000000 },
+        { label: 'AED 10M - AED 20M', min: 10000000, max: 20000000 },
+        { label: 'AED 20M+', min: 20000000, max: 100000000 },
     ];
 
     return (
