@@ -1,0 +1,640 @@
+[
+  {
+    "id": "prop-001",
+    "title": "Emirates Hills Mega Mansion",
+    "slug": "emirates-hills-mega-mansion",
+    "price": 31200000,
+    "propertyType": "Modern",
+    "address": "Sector L, Emirates Hills, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.074,
+      "lng": 55.1764
+    },
+    "features": {
+      "beds": 6,
+      "baths": 8,
+      "sqft": 10500
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "1.2 miles",
+      "walkabilityScore": 82
+    },
+    "media": {
+      "heroImages": [
+        "/videos/luxury-villa.mp4",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "/videos/luxury-villa.mp4",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-002",
+    "title": "Palm Jumeirah Signature Villa",
+    "slug": "palm-jumeirah-signature-villa",
+    "price": 45500000,
+    "propertyType": "Villa",
+    "address": "Frond N, Palm Jumeirah, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.1124,
+      "lng": 55.139
+    },
+    "features": {
+      "beds": 5,
+      "baths": 6,
+      "sqft": 8200
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "45 min",
+      "schoolDistrictRating": "10/10",
+      "nearestMetro": "5.0 miles",
+      "walkabilityScore": 65
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-003",
+    "title": "Downtown Dubai Penthouse",
+    "slug": "downtown-dubai-penthouse",
+    "price": 89900000,
+    "propertyType": "Mansion",
+    "address": "IL Primo, Downtown Dubai, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.1972,
+      "lng": 55.2744
+    },
+    "features": {
+      "beds": 8,
+      "baths": 12,
+      "sqft": 18000
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "20 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "3.5 miles",
+      "walkabilityScore": 40
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-004",
+    "title": "Al Barari Forest Estate",
+    "slug": "al-barari-forest-estate",
+    "price": 54700000,
+    "propertyType": "Estate",
+    "address": "The Nest, Al Barari, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.1972,
+      "lng": 55.2744
+    },
+    "features": {
+      "beds": 5,
+      "baths": 7,
+      "sqft": 9500
+    },
+    "status": "Sold",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "7/10",
+      "nearestMetro": "2.0 miles",
+      "walkabilityScore": 55
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "/videos/modern-home.mp4",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "/videos/modern-home.mp4",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-005",
+    "title": "Jumeirah Bay Island Mansion",
+    "slug": "jumeirah-bay-island-mansion",
+    "price": 19100000,
+    "propertyType": "Penthouse",
+    "address": "Jumeirah Bay Island, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.1972,
+      "lng": 55.2744
+    },
+    "features": {
+      "beds": 3,
+      "baths": 4,
+      "sqft": 4500
+    },
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "5 min",
+      "schoolDistrictRating": "5/10",
+      "nearestMetro": "0.1 miles",
+      "walkabilityScore": 98
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-006",
+    "title": "Dubai Marina Duplex",
+    "slug": "dubai-marina-duplex",
+    "price": 67900000,
+    "propertyType": "Villa",
+    "address": "Le Reve, Dubai Marina, Dubai, UAE",
+    "coordinates": {
+      "lng": 55.1228,
+      "lat": 25.1124
+    },
+    "features": {
+      "beds": 6,
+      "baths": 7,
+      "sqft": 14000
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "25 min",
+      "schoolDistrictRating": "N/A",
+      "nearestMetro": "10 min",
+      "walkabilityScore": 10
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-007",
+    "title": "Jumeirah Golf Estates Villa",
+    "slug": "jumeirah-golf-estates-villa",
+    "price": 80700000,
+    "propertyType": "Penthouse",
+    "address": "Wildflower, Jumeirah Golf Estates, Dubai, UAE",
+    "coordinates": {
+      "lng": 55.2744,
+      "lat": 25.1972
+    },
+    "features": {
+      "beds": 4,
+      "baths": 5,
+      "sqft": 8800
+    },
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "10 min",
+      "schoolDistrictRating": "N/A",
+      "nearestMetro": "On-site",
+      "walkabilityScore": 85
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-008",
+    "title": "Burj Khalifa Sky Retreat",
+    "slug": "burj-khalifa-sky-retreat",
+    "price": 128500000,
+    "propertyType": "Estate",
+    "address": "Burj Khalifa Zone 4, Downtown Dubai, UAE",
+    "coordinates": {
+      "lat": 25.0805,
+      "lng": 55.1403
+    },
+    "features": {
+      "beds": 9,
+      "baths": 11,
+      "sqft": 22000
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "3 miles",
+      "walkabilityScore": 30
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-009",
+    "title": "District One Crystal Lagoon Villa",
+    "slug": "district-one-crystal-lagoon-villa",
+    "price": 40400000,
+    "propertyType": "Penthouse",
+    "address": "District One, MBR City, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.0805,
+      "lng": 55.1403
+    },
+    "features": {
+      "beds": 4,
+      "baths": 4,
+      "sqft": 5200
+    },
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "20 min",
+      "schoolDistrictRating": "7/10",
+      "nearestMetro": "5 miles",
+      "walkabilityScore": 95
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-010",
+    "title": "The World Islands Estate",
+    "slug": "the-world-islands-estate",
+    "price": 60600000,
+    "propertyType": "Mansion",
+    "address": "Sweden Island, The World, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.097,
+      "lng": 55.304
+    },
+    "features": {
+      "beds": 7,
+      "baths": 9,
+      "sqft": 13500
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "30 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "4 miles",
+      "walkabilityScore": 25
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-011",
+    "title": "Bluewaters Island Penthouse",
+    "slug": "bluewaters-island-penthouse",
+    "price": 165200000,
+    "propertyType": "Penthouse",
+    "address": "Building 1, Bluewaters, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.1855,
+      "lng": 55.2671
+    },
+    "features": {
+      "beds": 5,
+      "baths": 6,
+      "sqft": 7500
+    },
+    "status": "Sold",
+    "neighborhood": {
+      "commuteToTechHub": "10 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "0.1 miles",
+      "walkabilityScore": 100
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-012",
+    "title": "Dubai Hills Masterpiece",
+    "slug": "dubai-hills-masterpiece",
+    "price": 69400000,
+    "propertyType": "Estate",
+    "address": "Dubai Hills Grove, Dubai Hills Estate, UAE",
+    "coordinates": {
+      "lat": 25.1855,
+      "lng": 55.2671
+    },
+    "features": {
+      "beds": 6,
+      "baths": 6,
+      "sqft": 6800
+    },
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "0.2 miles",
+      "walkabilityScore": 99
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-013",
+    "title": "Zabeel Saray Royal Residence",
+    "slug": "zabeel-saray-royal-residence",
+    "price": 34900000,
+    "propertyType": "Modern",
+    "address": "West Crescent, Palm Jumeirah, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.1855,
+      "lng": 55.2671
+    },
+    "features": {
+      "beds": 3,
+      "baths": 4,
+      "sqft": 4200
+    },
+    "status": "Active",
+    "neighborhood": {
+      "commuteToTechHub": "10 min",
+      "schoolDistrictRating": "10/10",
+      "nearestMetro": "0.1 miles",
+      "walkabilityScore": 97
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-014",
+    "title": "Bulgari Resort Private Villa",
+    "slug": "bulgari-resort-private-villa",
+    "price": 104600000,
+    "propertyType": "Mansion",
+    "address": "Bulgari Resort, Jumeirah Bay, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.0305,
+      "lng": 55.1944
+    },
+    "features": {
+      "beds": 7,
+      "baths": 8,
+      "sqft": 12500
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "15 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "1.5 miles",
+      "walkabilityScore": 90
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
+    "id": "prop-015",
+    "title": "Volante Tower Opulence",
+    "slug": "volante-tower-opulence",
+    "price": 56500000,
+    "propertyType": "Modern",
+    "address": "Volante, Business Bay, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.0305,
+      "lng": 55.1944
+    },
+    "features": {
+      "beds": 4,
+      "baths": 5,
+      "sqft": 6100
+    },
+    "status": "Sold",
+    "neighborhood": {
+      "commuteToTechHub": "25 min",
+      "schoolDistrictRating": "8/10",
+      "nearestMetro": "3 miles",
+      "walkabilityScore": 75
+    },
+    "media": {
+      "heroImages": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  }
+]

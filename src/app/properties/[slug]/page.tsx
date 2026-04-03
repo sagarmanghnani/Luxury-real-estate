@@ -2,13 +2,14 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Property } from '@/types/property';
-import propertiesData from '@/data/properties.json';
+import propertiesData from '@/data';
 import { VirtualTour } from '@/components/property/VirtualTour';
 import { HeroGallery } from '@/components/property/HeroGallery';
 import { BentoGrid } from '@/components/property/BentoGrid';
 import { NeighborhoodDataPanel } from '@/components/property/NeighborhoodDataPanel';
 import { RentalYieldCalculator } from '@/components/property/RentalYieldCalculator';
 import { LeadCaptureSidebar } from '@/components/property/LeadCaptureSidebar';
+import { AgentCard } from '@/components/property/AgentCard';
 import { BedDouble, Bath, SquareSigma, MapPin, ChevronLeft } from 'lucide-react';
 
 // Next.js feature for Static Site Generation
@@ -124,11 +125,14 @@ export default async function PropertyPage({
                 </div>
 
                 {/* Sidebar Column (Lead Gen / Agent Info) */}
-                <div className="lg:col-span-1">
-                    <LeadCaptureSidebar
-                        propertySlug={property.slug}
-                        propertyTitle={property.title}
-                    />
+                <div className="lg:col-span-1 relative z-50">
+                    <div className="sticky top-12">
+                        <LeadCaptureSidebar
+                            propertySlug={property.slug}
+                            propertyTitle={property.title}
+                        />
+                        <AgentCard />
+                    </div>
                 </div>
 
             </div>

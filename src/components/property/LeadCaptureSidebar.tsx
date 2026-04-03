@@ -15,7 +15,7 @@ export function LeadCaptureSidebar({ propertySlug, propertyTitle }: LeadCaptureS
     return (
         <>
             {/* Desktop Sidebar */}
-            <div className="hidden lg:block sticky top-12 bg-neutral-900 border border-neutral-800 rounded-3xl p-8 shadow-2xl relative overflow-hidden group">
+            <div className="hidden lg:block bg-neutral-900 border border-neutral-800 rounded-3xl p-8 shadow-2xl relative overflow-hidden group">
                 {/* Background Glow */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none group-hover:bg-white/10 transition-colors duration-700" />
 

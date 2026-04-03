@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, CheckCircle2, Loader2, Lock } from 'lucide-react';
+import { X, ArrowRight, CheckCircle2, Loader2, Lock, MessageCircle } from 'lucide-react';
 
 interface LeadCaptureQuizProps {
     isOpen: boolean;
@@ -249,14 +249,23 @@ export function LeadCaptureQuiz({ isOpen, onClose, propertySlug, propertyTitle }
                                 </div>
                                 <h2 className="text-3xl font-light text-white leading-tight">Dossier Unlocked</h2>
                                 <p className="text-neutral-400 font-light max-w-sm">
-                                    Thank you, {name.split(' ')[0]}. We have expedited your request. Our senior partner will WhatsApp you shortly with the financials.
+                                    Thank you, {name.split(' ')[0]}. We have expedited your request. Our senior partner has been notified.
                                 </p>
-                                <button
-                                    onClick={handleClose}
-                                    className="px-8 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-full text-sm font-medium transition-colors mt-4"
-                                >
-                                    Return to Property
-                                </button>
+
+                                <div className="flex flex-col gap-3 mt-4 w-full max-w-xs">
+                                    <button
+                                        onClick={() => window.open(`https://wa.me/971501234567?text=${encodeURIComponent('Hi, I just requested the Off-Market Dossier for ' + propertyTitle + '. I am ready to receive it.')}`, '_blank')}
+                                        className="w-full bg-white text-black hover:bg-neutral-200 py-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2 uppercase tracking-widest shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                                    >
+                                        <MessageCircle className="w-4 h-4" /> Message Us Now
+                                    </button>
+                                    <button
+                                        onClick={handleClose}
+                                        className="w-full py-3 bg-neutral-950 border border-neutral-800 hover:bg-neutral-900 text-white rounded-xl text-xs uppercase tracking-widest font-medium transition-all"
+                                    >
+                                        Explore Property
+                                    </button>
+                                </div>
                             </motion.div>
                         )}
                     </AnimatePresence>

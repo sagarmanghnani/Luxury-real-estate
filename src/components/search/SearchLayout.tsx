@@ -5,7 +5,7 @@ import FilterBar from './FilterBar';
 import PropertyCard from './PropertyCard';
 import MapWrapper from '../MapWrapper';
 import { Property } from '@/types/property';
-import propertiesData from '@/data/properties.json';
+import propertiesData from '@/data';
 
 export type Filters = {
     propertyType: string;

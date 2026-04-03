@@ -1,5 +1,5 @@
 import Navbar from '@/components/layout/Navbar';
-import propertiesData from '@/data/properties.json';
+import propertiesData from '@/data';
 import { Property } from '@/types/property';
 import SoldCard from '@/components/property/SoldCard';
 import Link from 'next/link';
