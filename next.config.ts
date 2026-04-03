@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'optim.tildacdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.tildacdn.com',
+      },
     ],
   },
 };
