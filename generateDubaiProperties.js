@@ -32,59 +32,39 @@ const getUniqueImage = () => {
     return constructImageUrl(id);
 };
 
-const dubaiTitles = [
-  "Emirates Hills Mega Mansion",
-  "Palm Jumeirah Signature Villa",
-  "Downtown Dubai Penthouse",
-  "Al Barari Forest Estate",
-  "Jumeirah Bay Island Mansion",
-  "Dubai Marina Duplex",
-  "Jumeirah Golf Estates Villa",
-  "Burj Khalifa Sky Retreat",
-  "District One Crystal Lagoon Villa",
-  "The World Islands Estate",
-  "Bluewaters Island Penthouse",
-  "Dubai Hills Masterpiece",
-  "Zabeel Saray Royal Residence",
-  "Bulgari Resort Private Villa",
-  "Volante Tower Opulence"
+const theBroksProperties = [
+  { title: "Aqua Flora", image: "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp", address: "Dubai Science Park, Dubai, UAE" },
+  { title: "Binghatti Hills", image: "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp", address: "Dubai Science Park, Dubai, UAE" },
+  { title: "Ocean Pearl 2", image: "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp", address: "Dubai Islands, Dubai, UAE" },
+  { title: "Volga Tower", image: "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp", address: "Jumeirah Village Triangle, Dubai, UAE" },
+  { title: "Tiger Sky Tower", image: "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp", address: "Business Bay, Dubai, UAE" },
+  { title: "Address Residences", image: "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp", address: "Zabeel, Dubai, UAE" },
+  { title: "Tanmiyat Villa", image: "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg", address: "Living Legends, Dubailand, UAE" }
 ];
 
-const dubaiAddresses = [
-  "Sector L, Emirates Hills, Dubai, UAE",
-  "Frond N, Palm Jumeirah, Dubai, UAE",
-  "IL Primo, Downtown Dubai, Dubai, UAE",
-  "The Nest, Al Barari, Dubai, UAE",
-  "Jumeirah Bay Island, Dubai, UAE",
-  "Le Reve, Dubai Marina, Dubai, UAE",
-  "Wildflower, Jumeirah Golf Estates, Dubai, UAE",
-  "Burj Khalifa Zone 4, Downtown Dubai, UAE",
-  "District One, MBR City, Dubai, UAE",
-  "Sweden Island, The World, Dubai, UAE",
-  "Building 1, Bluewaters, Dubai, UAE",
-  "Dubai Hills Grove, Dubai Hills Estate, UAE",
-  "West Crescent, Palm Jumeirah, Dubai, UAE",
-  "Bulgari Resort, Jumeirah Bay, Dubai, UAE",
-  "Volante, Business Bay, Dubai, UAE"
-];
+const getBroksProperty = (idx) => theBroksProperties[idx % theBroksProperties.length];
 
 const dubaiProperties = originalData.map((prop, idx) => {
     const newProp = { ...prop };
-    newProp.title = dubaiTitles[idx];
+    const broksProp = getBroksProperty(idx);
+    
+    // Uniqe titles for duplicates
+    const iter = Math.floor(idx / theBroksProperties.length);
+    newProp.title = iter > 0 ? `${broksProp.title} - Unit ${iter + 1}` : broksProp.title;
     newProp.slug = newProp.title.toLowerCase().replace(/ /g, '-');
-    newProp.address = dubaiAddresses[idx];
+    newProp.address = broksProp.address;
 
-    // Give each property uniquely varied media but retain videos if present
+    // Use The Broks specific image for the main hero image
     const isVideo1 = newProp.media.heroImages[0]?.includes('.mp4');
     const isVideo2 = newProp.media.heroImages[1]?.includes('.mp4');
 
-    const hero1 = isVideo1 ? newProp.media.heroImages[0] : getUniqueImage();
-    const hero2 = isVideo2 ? newProp.media.heroImages[1] : getUniqueImage();
-    const hero3 = getUniqueImage();
+    const hero1 = isVideo1 ? newProp.media.heroImages[0] : broksProp.image;
+    const hero2 = isVideo2 ? newProp.media.heroImages[1] : broksProp.image; // Use the same hero for simplicity or fallback
+    const hero3 = getUniqueImage(); // Keep original fallback images for 3rd image
 
     newProp.media.heroImages = [hero1, hero2, hero3];
     newProp.media.gallery = [
-        hero1, hero2, hero3,
+        hero1, hero1, hero3,
         getUniqueImage(), getUniqueImage(),
         getUniqueImage(), getUniqueImage(), getUniqueImage()
     ];

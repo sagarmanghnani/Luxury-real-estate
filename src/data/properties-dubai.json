@@ -1,11 +1,11 @@
 [
   {
     "id": "prop-001",
-    "title": "Emirates Hills Mega Mansion",
-    "slug": "emirates-hills-mega-mansion",
+    "title": "Aqua Flora",
+    "slug": "aqua-flora",
     "price": 31200000,
     "propertyType": "Modern",
-    "address": "Sector L, Emirates Hills, Dubai, UAE",
+    "address": "Dubai Science Park, Dubai, UAE",
     "coordinates": {
       "lat": 25.074,
       "lng": 55.1764
@@ -26,29 +26,29 @@
     "media": {
       "heroImages": [
         "/videos/luxury-villa.mp4",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
+        "/videos/luxury-villa.mp4",
         "/videos/luxury-villa.mp4",
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-002",
-    "title": "Palm Jumeirah Signature Villa",
-    "slug": "palm-jumeirah-signature-villa",
+    "title": "Binghatti Hills",
+    "slug": "binghatti-hills",
     "price": 45500000,
     "propertyType": "Villa",
-    "address": "Frond N, Palm Jumeirah, Dubai, UAE",
+    "address": "Dubai Science Park, Dubai, UAE",
     "coordinates": {
       "lat": 25.1124,
       "lng": 55.139
@@ -68,30 +68,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-003",
-    "title": "Downtown Dubai Penthouse",
-    "slug": "downtown-dubai-penthouse",
+    "title": "Ocean Pearl 2",
+    "slug": "ocean-pearl-2",
     "price": 89900000,
     "propertyType": "Mansion",
-    "address": "IL Primo, Downtown Dubai, Dubai, UAE",
+    "address": "Dubai Islands, Dubai, UAE",
     "coordinates": {
       "lat": 25.1972,
       "lng": 55.2744
@@ -111,30 +111,30 @@
     },
     "media": {
       "heroImages": [
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+      ],
+      "gallery": [
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
-      ],
-      "gallery": [
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-004",
-    "title": "Al Barari Forest Estate",
-    "slug": "al-barari-forest-estate",
+    "title": "Volga Tower",
+    "slug": "volga-tower",
     "price": 54700000,
     "propertyType": "Estate",
-    "address": "The Nest, Al Barari, Dubai, UAE",
+    "address": "Jumeirah Village Triangle, Dubai, UAE",
     "coordinates": {
       "lat": 25.1972,
       "lng": 55.2744
@@ -154,30 +154,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp",
         "/videos/modern-home.mp4",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "/videos/modern-home.mp4",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-005",
-    "title": "Jumeirah Bay Island Mansion",
-    "slug": "jumeirah-bay-island-mansion",
+    "title": "Tiger Sky Tower",
+    "slug": "tiger-sky-tower",
     "price": 19100000,
     "propertyType": "Penthouse",
-    "address": "Jumeirah Bay Island, Dubai, UAE",
+    "address": "Business Bay, Dubai, UAE",
     "coordinates": {
       "lat": 25.1972,
       "lng": 55.2744
@@ -196,30 +196,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-006",
-    "title": "Dubai Marina Duplex",
-    "slug": "dubai-marina-duplex",
+    "title": "Address Residences",
+    "slug": "address-residences",
     "price": 67900000,
     "propertyType": "Villa",
-    "address": "Le Reve, Dubai Marina, Dubai, UAE",
+    "address": "Zabeel, Dubai, UAE",
     "coordinates": {
       "lng": 55.1228,
       "lat": 25.1124
@@ -239,30 +239,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-007",
-    "title": "Jumeirah Golf Estates Villa",
-    "slug": "jumeirah-golf-estates-villa",
+    "title": "Tanmiyat Villa",
+    "slug": "tanmiyat-villa",
     "price": 80700000,
     "propertyType": "Penthouse",
-    "address": "Wildflower, Jumeirah Golf Estates, Dubai, UAE",
+    "address": "Living Legends, Dubailand, UAE",
     "coordinates": {
       "lng": 55.2744,
       "lat": 25.1972
@@ -281,30 +281,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-008",
-    "title": "Burj Khalifa Sky Retreat",
-    "slug": "burj-khalifa-sky-retreat",
+    "title": "Aqua Flora - Unit 2",
+    "slug": "aqua-flora---unit-2",
     "price": 128500000,
     "propertyType": "Estate",
-    "address": "Burj Khalifa Zone 4, Downtown Dubai, UAE",
+    "address": "Dubai Science Park, Dubai, UAE",
     "coordinates": {
       "lat": 25.0805,
       "lng": 55.1403
@@ -324,30 +324,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-009",
-    "title": "District One Crystal Lagoon Villa",
-    "slug": "district-one-crystal-lagoon-villa",
+    "title": "Binghatti Hills - Unit 2",
+    "slug": "binghatti-hills---unit-2",
     "price": 40400000,
     "propertyType": "Penthouse",
-    "address": "District One, MBR City, Dubai, UAE",
+    "address": "Dubai Science Park, Dubai, UAE",
     "coordinates": {
       "lat": 25.0805,
       "lng": 55.1403
@@ -366,30 +366,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3665-3533-4162-b432-363139613030/-/cover/480x474/center/center/-/format/webp/Cover_Hills_2.jpg.webp",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-010",
-    "title": "The World Islands Estate",
-    "slug": "the-world-islands-estate",
+    "title": "Ocean Pearl 2 - Unit 2",
+    "slug": "ocean-pearl-2---unit-2",
     "price": 60600000,
     "propertyType": "Mansion",
-    "address": "Sweden Island, The World, Dubai, UAE",
+    "address": "Dubai Islands, Dubai, UAE",
     "coordinates": {
       "lat": 25.097,
       "lng": 55.304
@@ -409,30 +409,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6264-6438-4466-a663-313463313633/-/cover/480x474/center/center/-/format/webp/Cover_Pearl_2.jpg.webp",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-011",
-    "title": "Bluewaters Island Penthouse",
-    "slug": "bluewaters-island-penthouse",
+    "title": "Volga Tower - Unit 2",
+    "slug": "volga-tower---unit-2",
     "price": 165200000,
     "propertyType": "Penthouse",
-    "address": "Building 1, Bluewaters, Dubai, UAE",
+    "address": "Jumeirah Village Triangle, Dubai, UAE",
     "coordinates": {
       "lat": 25.1855,
       "lng": 55.2671
@@ -451,30 +451,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6564-6530-4833-a630-623035333566/-/cover/480x474/center/center/-/format/webp/Cover_Volga_2.jpg.webp",
         "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-012",
-    "title": "Dubai Hills Masterpiece",
-    "slug": "dubai-hills-masterpiece",
+    "title": "Tiger Sky Tower - Unit 2",
+    "slug": "tiger-sky-tower---unit-2",
     "price": 69400000,
     "propertyType": "Estate",
-    "address": "Dubai Hills Grove, Dubai Hills Estate, UAE",
+    "address": "Business Bay, Dubai, UAE",
     "coordinates": {
       "lat": 25.1855,
       "lng": 55.2671
@@ -493,30 +493,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
+        "https://optim.tildacdn.com/tild6664-3134-4463-b835-326432383466/-/cover/480x474/center/center/-/format/webp/Cover_Sky_2.jpg.webp",
         "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-013",
-    "title": "Zabeel Saray Royal Residence",
-    "slug": "zabeel-saray-royal-residence",
+    "title": "Address Residences - Unit 2",
+    "slug": "address-residences---unit-2",
     "price": 34900000,
     "propertyType": "Modern",
-    "address": "West Crescent, Palm Jumeirah, Dubai, UAE",
+    "address": "Zabeel, Dubai, UAE",
     "coordinates": {
       "lat": 25.1855,
       "lng": 55.2671
@@ -535,13 +535,13 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
-        "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1501183638710-8b010c733f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3033-3163-4232-a536-633962393331/-/cover/480x474/center/center/-/format/webp/Cover_Address_2.jpg.webp",
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
@@ -554,11 +554,11 @@
   },
   {
     "id": "prop-014",
-    "title": "Bulgari Resort Private Villa",
-    "slug": "bulgari-resort-private-villa",
+    "title": "Tanmiyat Villa - Unit 2",
+    "slug": "tanmiyat-villa---unit-2",
     "price": 104600000,
     "propertyType": "Mansion",
-    "address": "Bulgari Resort, Jumeirah Bay, Dubai, UAE",
+    "address": "Living Legends, Dubailand, UAE",
     "coordinates": {
       "lat": 25.0305,
       "lng": 55.1944
@@ -578,30 +578,30 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
+        "https://static.tildacdn.com/tild3161-3437-4361-b130-343633666664/Cover_Legends_1.jpg",
         "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1615529182904-142f3fb1cded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600607686527-6fca040684f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
   },
   {
     "id": "prop-015",
-    "title": "Volante Tower Opulence",
-    "slug": "volante-tower-opulence",
+    "title": "Aqua Flora - Unit 3",
+    "slug": "aqua-flora---unit-3",
     "price": 56500000,
     "propertyType": "Modern",
-    "address": "Volante, Business Bay, Dubai, UAE",
+    "address": "Dubai Science Park, Dubai, UAE",
     "coordinates": {
       "lat": 25.0305,
       "lng": 55.1944
@@ -620,19 +620,19 @@
     },
     "media": {
       "heroImages": [
-        "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "gallery": [
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://optim.tildacdn.com/tild3936-3963-4562-b937-356336626235/-/cover/480x474/center/center/-/format/webp/Cover_Aqua_Flora_2.jpg.webp",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
+        "https://images.unsplash.com/photo-1600607688969-a5bfcd64fc15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600566752355-32c0211a7f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1576941088065-9221cdce81fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
         "https://images.unsplash.com/photo-1600585154526-990d1ce31d04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1512915922686-57c11dde9c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1484154218962-a197022b58da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60",
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
+        "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60"
       ],
       "cinematicVideo": "/videos/luxury-villa.mp4"
     }
