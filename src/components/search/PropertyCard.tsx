@@ -15,7 +15,7 @@ interface PropertyCardProps {
 }
 
 export default function PropertyCard({ property, onMouseEnter, onMouseLeave, priority = false }: PropertyCardProps) {
-    const fallbackImage = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80';
+    const fallbackImage = '/images/reliable/img_22826df785f8.jpg';
     const [imageIndex, setImageIndex] = useState(0);
 
     const [imageError, setImageError] = useState(false);

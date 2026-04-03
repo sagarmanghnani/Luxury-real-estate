@@ -21,7 +21,7 @@ export function AgentCard() {
             <div className="flex items-center gap-4 mb-6">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-neutral-800">
                     <Image 
-                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" 
+                        src="/images/reliable/img_206f3fc25a28.jpg" 
                         alt="Agent Profile" 
                         fill 
                         className="object-cover"

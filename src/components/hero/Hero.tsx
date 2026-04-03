@@ -9,7 +9,7 @@ export default function Hero() {
         <section className="relative w-full h-screen overflow-hidden">
             {/* Optimized Preloaded Background Image (Acts as Poster) */}
             <Image
-                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                src="/images/reliable/img_7ec0641a36a8.jpg"
                 alt="Luxury Estate"
                 fill
                 priority
