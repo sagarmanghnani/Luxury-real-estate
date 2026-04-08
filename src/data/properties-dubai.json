@@ -1,5 +1,48 @@
 [
   {
+    "id": "prop-016",
+    "title": "Samana Ocean Pearl",
+    "slug": "samana-ocean-pearl",
+    "price": 1820000,
+    "propertyType": "Modern",
+    "address": "Dubai Islands, Dubai, UAE",
+    "coordinates": {
+      "lat": 25.297,
+      "lng": 55.304
+    },
+    "features": {
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1500
+    },
+    "status": "Active",
+    "virtualTourUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "neighborhood": {
+      "commuteToTechHub": "20 min",
+      "schoolDistrictRating": "9/10",
+      "nearestMetro": "5.0 miles",
+      "walkabilityScore": 85
+    },
+    "media": {
+      "heroImages": [
+        "https://static.tildacdn.com/tild3265-6139-4361-a532-643165663733/1723636560523_585361.jpg",
+        "https://static.tildacdn.com/tild3931-3839-4438-b838-396535313066/Ocean-Pearl4.jpg",
+        "https://static.tildacdn.com/tild3535-6466-4661-a164-616265386364/Ocean-Pearl5.jpg"
+      ],
+      "gallery": [
+        "https://static.tildacdn.com/tild3265-6139-4361-a532-643165663733/1723636560523_585361.jpg",
+        "https://static.tildacdn.com/tild3361-3833-4466-b035-646461326462/Ocean-Pearl3.jpg",
+        "https://static.tildacdn.com/tild3931-3839-4438-b838-396535313066/Ocean-Pearl4.jpg",
+        "https://static.tildacdn.com/tild3535-6466-4661-a164-616265386364/Ocean-Pearl5.jpg",
+        "https://static.tildacdn.com/tild3931-3838-4633-a561-333631376339/Ocean-Pearl6.jpg",
+        "https://static.tildacdn.com/tild3236-6666-4435-b939-393666313962/Ocean-Pearl8.jpg",
+        "https://static.tildacdn.com/tild6130-3231-4563-b831-336666353339/Ocean-Pearl10.jpg",
+        "https://static.tildacdn.com/tild3037-6664-4661-a362-343731636530/Ocean-Pearl11.jpg"
+      ],
+      "cinematicVideo": "/videos/luxury-villa.mp4"
+    }
+  },
+  {
     "id": "prop-001",
     "title": "Aqua Flora",
     "slug": "aqua-flora",

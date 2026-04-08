@@ -17,7 +17,7 @@ export async function generateStaticParams() {
     return propertiesData.map((property) => ({
         slug: property.slug,
     }));
-}
+} // force re-eval
 
 export default async function PropertyPage({
     params,
